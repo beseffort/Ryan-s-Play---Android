@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_header"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/abc_action_bar_default_height_material"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentTop="true"
+    android:clickable="false"
+    android:background="#347296">
+
+    <ImageButton
+        android:id="@+id/ibt_back"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="-5dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/top_left_white_arrow" />
+
+</RelativeLayout>

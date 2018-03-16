@@ -1,0 +1,249 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:facebook="http://schemas.android.com/apk/res-auto"
+    xmlns:fb="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ryansplayllc.ryansplay.LauncherActivity"
+    android:background="@drawable/sign_up"
+
+    android:gravity="top">
+
+    <fonts.BebasNeueBoldTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Change the game"
+        android:id="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="70dp"
+        android:textColor="#ffffffff"
+        android:textSize="17dp"
+        android:layout_marginTop="0dp"
+        android:clickable="false"
+        android:textStyle="bold"/>
+
+    <fonts.HelveticalNeueTextview
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="This is a supporting tagline that reinforces the first"
+        android:id="@+id/textView5"
+        android:visibility="invisible"
+        android:textColor="#CDCFD2"
+        android:layout_alignBottom="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-20dp" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/textView"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/relativeLayout10">
+        <RelativeLayout
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/launch_sign_up"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp">
+    <fonts.HelveticalNeueTextview
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Already have an account?"
+        android:id="@+id/textView6"
+        android:textColor="#CDCDCD"
+        android:textSize="13dp"
+
+
+        android:layout_alignParentLeft="true"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="0dp" />
+            <fonts.HelveticaNeueCondensedBoldTextview
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Sign In"
+                android:id="@+id/launch_sign_in"
+                android:textColor="#cdcdcd"
+                android:textSize="12dp"
+                android:textStyle="bold"
+                android:layout_alignTop="@+id/textView6"
+                android:layout_toRightOf="@+id/textView6"
+                android:layout_marginLeft="10dp"
+
+
+                />
+            </RelativeLayout>
+
+        <fonts.HelveticalNeueTextview
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="© 2015 Ryan&apos;s Play,LLC.All Rights Reserved"
+        android:id="@+id/textView8"
+        android:textColor="#A6A6A6"
+        android:textSize="12dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="45dp"
+        android:layout_marginLeft="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-35dp" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/signup_bar"
+
+            android:id="@+id/launch_sign_up"
+
+            android:layout_below="@+id/sp_bt_fb_sign_up"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp" >
+            <fonts.BebasNeueBoldTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sign_up"
+                android:layout_centerInParent="true"
+                android:textColor="#ffffff"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                />
+            </RelativeLayout>
+
+        <com.facebook.login.widget.LoginButton
+
+            android:layout_width="265dp"
+            android:layout_height="wrap_content"
+            android:text="@string/facebook"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/sp_bt_fb_sign_up"
+            android:textColor="#ffffff"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:background="@color/tw__transparent"
+            />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/facebook_bar"
+            android:layout_alignRight="@+id/launch_sign_up"
+            android:layout_alignLeft="@+id/launch_sign_up"
+            android:id="@+id/facebook_button_top_view"
+            android:layout_alignTop="@+id/fb_lg_bt"
+
+            >
+            <fonts.BebasNeueBoldTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sign up with Facebook"
+                android:layout_centerInParent="true"
+                android:textColor="#ffffff"
+                android:textSize="18dp"
+                android:textStyle="bold"/>
+
+            </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/fbsignup_popup_layout"
+        android:visibility="gone"
+        android:background="#9e000000">
+
+        <RelativeLayout
+            android:layout_width="320dp"
+            android:layout_height="320dp"
+            android:layout_centerInParent="true"
+            android:background="#ffffff"
+            android:paddingTop="10dp"
+            android:paddingBottom="40dp"
+
+           >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/close_blue"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_alignParentTop="true"
+                android:id="@+id/fbsignup_popup_close_icon"
+                />
+
+            <fonts.BebasNeueBoldTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/signup_with_facebook_label"
+                android:text="Sign up With Facebook"
+                android:textStyle="bold"
+                android:textColor="#004770"
+                android:textSize="21dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/fbsignup_popup_close_icon"
+                />
+
+            <fonts.HelveticalNeueCondensedBoldEditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/search_text_box"
+                android:id="@+id/fbsignup_popup_username"
+                android:layout_below="@+id/signup_with_facebook_label"
+                android:layout_marginTop="30dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:textColor="#666666"
+
+                android:layout_centerHorizontal="true"
+                android:singleLine="true"
+                android:maxLength="30"
+                android:hint="Username"
+                android:gravity="center"
+
+
+                />
+
+            <fonts.HelveticalNeueCondensedBoldEditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/search_text_box"
+                android:id="@+id/fbsignup_popup_rpcode"
+                android:layout_below="@+id/fbsignup_popup_username"
+                android:layout_marginTop="15dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:textColor="#666666"
+
+                android:layout_centerHorizontal="true"
+                android:hint="RP Code"
+                android:gravity="center"
+                android:singleLine="true"
+                android:maxLength="30"
+                />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/fbsignup_popup_signupsubmit"
+                android:background="@drawable/signup_bar"
+                android:layout_below="@+id/fbsignup_popup_rpcode"
+                android:layout_alignRight="@+id/fbsignup_popup_rpcode"
+                android:layout_alignLeft="@+id/fbsignup_popup_rpcode"
+                android:layout_marginTop="15dp"
+                android:text="Sign Up With Facebook"
+                android:textColor="#ffffff"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"
+                />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>

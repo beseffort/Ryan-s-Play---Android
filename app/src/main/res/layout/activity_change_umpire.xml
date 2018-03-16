@@ -1,0 +1,347 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ryansplayllc.ryansplay.GameLobbyActivity"
+   >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/header_layout">
+        <include
+            android:id="@+id/header"
+            layout="@layout/header" />
+        <ImageButton
+            android:id="@+id/ch_umpire_back_button"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="-5dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/top_left_white_arrow" />
+
+
+        <fonts.BebasNeueBoldTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Switch Umpire"
+            android:id="@+id/switch_umpire_heading"
+            android:layout_centerInParent="true"
+            android:textColor="#ffffff"
+            android:textSize="21dp"
+            android:textStyle="bold"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/playerInfoLayout"
+        android:layout_below="@+id/header_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#f6f7f2">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:orientation="vertical"
+            android:padding="@dimen/default_padding" >
+
+            <fonts.BebasNeueBoldTextView
+                android:id="@+id/my_tv_game_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Game Name"
+                android:textColor="#347296"
+                android:textSize="@dimen/default_text_size"
+                android:textStyle="bold"/>
+
+            <fonts.BebasNeueBoldTextView
+                android:textStyle="bold"
+                android:id="@+id/ch_umpire_creatorname"
+                android:text="Game Name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#347296"
+                android:textSize="@dimen/default_text_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:orientation="vertical"
+            android:padding="@dimen/default_padding" >
+
+            <fonts.BebasNeueBoldTextView
+                android:textStyle="bold"
+                android:id="@+id/ch_umpire_game_length"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/no_of_plays"
+                android:textColor="#347296"
+                android:textSize="@dimen/default_text_size" />
+
+            <TextView
+                android:id="@+id/gl_plays_for_points"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/default_text"
+                android:textSize="@dimen/default_text_size" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/playerListContainer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/playerInfoLayout"
+        android:layout_above="@+id/footer"
+        >
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/abc_action_bar_default_height_material"
+                android:visibility="gone"
+                android:background="@android:color/white"
+                android:padding="@dimen/default_padding" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/default_padding"
+                    android:text="@string/select_umpire"
+                    android:textColor="@color/red_text"
+                    android:textSize="@dimen/default_heading_size"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/game_lobby_iv_refersh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:contentDescription="@string/refersh"
+                    android:gravity="center_vertical"
+                    android:src="@drawable/ic_refresh" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/change_umpire_ll_no_umpire"
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_margin"
+                android:background="@android:color/white"
+                android:gravity="center"
+                android:padding="@dimen/default_padding" >
+
+                <fonts.HelveticaNeueCondensedBoldTextview
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/default_padding"
+                    android:text="@string/no_umpire_select_found"
+                    android:textColor="@color/red_text"
+                    android:textSize="@dimen/default_heading_size"
+                    android:textStyle="bold"
+                    android:id="@+id/ch_umpire_status_text"/>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/white"
+                android:orientation="vertical"
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:id="@+id/ch_umpire_status_layout"
+                    android:visibility="gone"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="status message"
+                        android:textStyle="bold"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:id="@+id/ch_umpire_status_messagetext"
+
+                        />
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/susse"
+                        android:layout_centerVertical="true"
+                        android:id="@+id/ch_umpire_status_image"
+                        android:layout_toLeftOf="@+id/ch_umpire_status_messagetext"
+                        android:layout_marginRight="5dp"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/change_umpire_list_layout">
+                    <ListView
+                        android:id="@+id/change_umpire_lv_player_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/white"
+                        >
+
+                    </ListView>
+                </RelativeLayout>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/ch_umpire_return_gameLobby"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/signup_bar"
+            android:padding="@dimen/default_padding"
+            android:text="RETURN TO GAME LOBBY"
+            android:textColor="@android:color/white"
+            android:visibility="visible"
+            android:layout_alignParentBottom="true"
+            />
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/footer"
+        layout="@layout/footer" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:alpha="1"
+        android:visibility="gone"
+        android:id="@+id/selectedUmpireDetails"
+        android:background="#ce000000">
+
+        <RelativeLayout
+            android:layout_width="320dp"
+            android:layout_height="320dp"
+            android:background="#ffffff"
+
+            android:layout_centerInParent="true">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:id="@+id/confirm_popup_close_button"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:nestedScrollingEnabled="false"
+                android:src="@drawable/close_blue" />
+
+            <fonts.BebasNeueBoldTextView
+                android:id="@+id/switchTo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SWITCH UMPIRE"
+                android:textColor="#347296"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:textSize="@dimen/default_text_size"
+                android:textStyle="bold"/>
+
+            <fonts.BebasNeueBoldTextView
+                android:id="@+id/confirmation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PLEASE CONFIRM UMPIRE SWITCH TO:"
+                android:textColor="#347296"
+                android:layout_below="@+id/switchTo"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="45dp"
+                android:textSize="@dimen/default_text_size"
+                android:textStyle="bold"/>
+
+            <fonts.BebasNeueBoldTextView
+
+                android:id="@+id/newUmpireName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Umpire"
+                android:textColor="#347296"
+                android:layout_below="@+id/confirmation"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:textSize="@dimen/default_text_size"
+                android:textStyle="bold"/>
+
+            <Button
+                android:id="@+id/change_confirmation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/signup_bar"
+                android:padding="@dimen/default_padding"
+                android:text="SWITCH UMPIRE"
+                android:layout_marginTop="25dp"
+                android:textColor="@android:color/white"
+                android:layout_below="@+id/newUmpireName"
+                android:visibility="visible"
+                android:textStyle="bold"
+
+                />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/noPlayersLayout"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/playerInfoLayout"
+        android:layout_above="@+id/footer"
+        >
+
+        <fonts.BebasNeueBoldTextView
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="There are no reserve umpires"
+            android:id="@+id/noPlayers"
+            android:textColor="#347296"
+            android:layout_above="@+id/returnLobbyEmpty"
+            android:layout_centerHorizontal="true"
+
+            />
+        <Button
+            android:id="@+id/returnLobbyEmpty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/signup_bar"
+            android:padding="@dimen/default_padding"
+            android:text="RETURN TO GAME LOBBY"
+            android:textColor="@android:color/white"
+            android:visibility="visible"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:layout_centerInParent="true"
+            />
+    </RelativeLayout>
+
+
+</RelativeLayout>

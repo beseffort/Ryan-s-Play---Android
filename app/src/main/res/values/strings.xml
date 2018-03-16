@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="project_number">598239096189</string>
+    <string name="introduction">Welcome! </string>
+    <string name="clear_screen">Clear Screen</string>
+    <string name="first_launch">First Launch</string>
+    <string name="num_of_missed_messages">MissedMessageCount</string>
+    <string name="lines_of_message_count">LinesOfMessageCount</string>
+    <string name="notification_number">1337</string>
+
+    <!-- base url -->
+    <string name="baseurl">http://52.88.139.217/api/</string>
+    <string name="app_name">Ryan\'s Play</string>
+    <string name="sign_up">Sign Up With Email</string>
+    <string name="login">Sign In</string>
+    <string name="player_name">Player Name</string>
+    <string name="no_value">-</string>
+    <string name="no_of_plays">No of Plays</string>
+    <string name="sec_to_go">sec to go</string>
+    <string name="total_plays">Total Plays</string>
+    <string name="total_points">Total Points</string>
+    <string name="account">Account</string>
+    <string name="my_account">My Account</string>
+    <string name="base_hits">Base hits</string>
+    <string name="name">Name</string>
+    <string name="winner_cup">Winner Cup</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="email">Email Address</string>
+    <string name="error">Error</string>
+    <string name="change_info">Change Info</string>
+    <string name="change_pwd">Change password</string>
+    <string name="reset_pwd">Reset password</string>
+    <string name="signout">Sign Out</string>
+    <string name="out_of">out of</string>
+    <string name="plays_complete">Plays Complete</string>
+    <string name="points">Points</string>
+    <string name="password">Password</string>
+    <string name="current_password">Current Password</string>
+    <string name="new_password">New Password</string>
+    <string name="confrim_password">Confirm Password</string>
+    <string name="confrim_umpire">Confirm Umpire</string>
+    <string name="or">or</string>
+    <string name="forget_password">Forget your Password?</string>
+    <string name="remember_me">Remember Me</string>
+    <string name="refersh">Refersh</string>
+    <string name="is_winning">is winning</string>
+    <string name="strikeout">Strikeout</string>
+    <string name="run_score">Run Score</string>
+    <string name="start_play">Start Play</string>
+    <string name="close_play">Close Play</string>
+    <string name="select_your_result">Select your result</string>
+    <string name="create_new_game">Create New Game</string>
+    <string name="create_game">Create Game</string>
+    <string name="i_will_umpire">I Will Umpire</string>
+    <string name="use_ryans_umpire">Use Rayn\'s Play Umpire</string>
+    <string name="game_name">Game Name</string>
+    <string name="game_list">Game List</string>
+    <string name="game_creator">Game Creator</string>
+    <string name="game_search_result">Game Search result</string>
+    <string name="interested_in_umpiring">Interested in umpiring?</string>
+    <string name="game">Game</string>
+    <string name="game_type">Game Type</string>
+    <string name="search_by_game_name">Search by Game Name</string>
+    <string name="search_by_game_creator">Search by Game Creator</string>
+    <string name="search_by_game_length">Search by Game Length</string>
+    <string name="find_your_game">Find your Game</string>
+    <string name="game_umpire">Game Umpire</string>
+    <string name="umpire_name">Umpire Name</string>
+    <string name="change_umpire">Switch Umpire</string>
+    <string name="player_in_game">Player in Game</string>
+    <string name="leaderboard">Leaderboard</string>
+    <string name="submit">Submit PLay</string>
+    <string name="close">Close</string>
+    <string name="waiting_for_umpire_result">Ball In Play</string>
+    <string name="invalid_email_and_password">Invalid email and Password</string>
+    <string name="clear">Clear</string>
+    <string name="argue_call">Argue Call</string>
+    <string name="upload_img">Upload Image</string>
+    <string name="length">Length</string>
+    <string name="world_rank">World Rank</string>
+    <string name="no_of_players"># of Players</string>
+    <string name="of_players"># of Plays</string>
+    <string name="join_game">Join Game</string>
+    <string name="add_plays">Add Plays</string>
+    <string name="search_game">Search Game</string>
+    <string name="launch_game">Launch Game</string>
+    <string name="game_settings">Game Settings</string>
+    <string name="cancel_game">Cancel Game</string>
+    <string name="select_umpire">Select Umpire</string>
+    <string name="no_umpire_select_found">No Possible Umpire Found</string>
+    <string name="yes">Yes</string>
+    <string name="play">Plays</string>
+    <string name="play_no">Play #</string>
+    <string name="cf">CF</string>
+    <string name="lf">LF</string>
+    <string name="third_b">3B</string>
+    <string name="ss">SS</string>
+    <string name="two_b">2B</string>
+    <string name="one_b">1B</string>
+    <string name="p">P</string>
+    <string name="c">C</string>
+    <string name="rf">RF</string>
+    <string name="all_games">All Games</string>
+    <string name="most_popular">Most Popular</string>
+    <string name="last_play">Last Play:</string>
+    <string name="rules">Rules</string>
+    <string name="profile_pic">Profile Pic</string>
+    <string name="private_string">Private</string>
+    <string name="public_string">Public</string>
+    <string name="game_length">Game Length</string>
+    <string name="no">No</string>
+    <string name="hr">HR</string>
+    <string name="current_plays">Current plays</string>
+    <string name="sms_invites">SMS Invites</string>
+    <string name="share">Share</string>
+    <string name="back_to_game">Return to Home</string>
+    <string name="previous">Previous</string>
+    <string name="next">Next</string>
+    <string name="in_game">In Game:</string>
+    <string name="you_umpire">You are Umpire, Please select result</string>
+    <string name="seconds_to_select">seconds to select</string>
+    <string name="game_lobby">Game Lobby</string>
+    <string name="facebook">Sign Up With Facebook     </string>
+    <string name="twitter">Twitter</string>
+    <string name="username">Username</string>
+    <string name="settings">Settings</string>
+    <string name="sound">Sound</string>
+    <string name="first">1st</string>
+    <string name="second">2nd</string>
+    <string name="third">3rd</string>
+    <string name="time_left">Time left</string>
+    <string name="auto_sharing">Auto Sharing</string>
+    <string name="notification">Notification</string>
+    <string name="connect">Connect</string>
+    <string name="auto_sharing_text">We will automatically store any awards earned 
+while playing.</string>
+    <string name="clock_countdown_vibrate">Clock Countdown Vibrate</string>
+    <string name="title_activity_sign_up">SignUpActivity</string>
+    <string name="title_activity_my_account">MyAccountActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_game_home_screen">GameHomeScreenActivity</string>
+    <string name="title_activity_create_new_game">CreateNewGameActivity</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_join">JoinActivity</string>
+    <string name="title_activity_game_lobby">GameLobbyActivity</string>
+    <string name="title_activity_game_screen">GameScreenActivity</string>
+    <string name="title_activity_game_leader_board">GameLeaderBoardActivity</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+    <string name="action_settings">Settings</string>
+    <!-- facebook values -->
+    <string name="facebook_app_id">913910812005320</string>
+    <!--<string name="facebook_app_id">375226199335522</string>-->
+
+    <!--Twitter values-->
+    <string name = "twitter_consumer_key">u2tSkSTWd6Ytz9H53tdd6RLNB</string>
+    <string name= "twitter_consumer_secret">RFyXXEKjdkZ02tYKcJGv3tQia7dMeVEqFKwTpXIReIymjplGYJ</string>
+
+    <!-- dummy values -->
+    <string name="dummy_name">Ryan</string>
+    <string name="dummy_no_of_plays">10345</string>
+    <string name="dummy_total_points">450</string>
+    <string name="dummy_base_hit">100</string>
+    <string name="dummy_hr">30</string>
+    <string name="dummy_strike">33</string>
+    <string name="dummy_full_name">Ryan Wheeler</string>
+    <string name="dummy_email">ryanwheeler749@gmail.com</string>
+    <string name="dummy_password">**********</string>
+    <string name="dummy_game_name">Ryan_123</string>
+    <string name="dummy_game_length">30</string>
+    <string name="dummy_current_play">30</string>
+    <string name="dummy_first_point">46</string>
+    <string name="dummy_second_point">15</string>
+    <string name="dummy_third_point">5</string>
+    <string name="dummy_high_point">70</string>
+    <string name="dummy_played_plays">1</string>
+    <string name="dummy_pendind_time">12</string>
+    <string name="dummy_game_screen_plays">1/10</string>
+    <string name="dummy_game_screen_last_play">LF</string>
+    <string name="dummy_game_screen_points">+10</string>
+    <string name="title_activity_rules">RulesActivity</string>
+    <string name="title_activity_leader_board">LeaderBoardActivity</string>
+    <string name="title_activity_change_password">ChangePasswordActivity</string>
+    <string name="title_activity_change_profile_info">ChangeProfileInfoActivity</string>
+    <string name="title_activity_game_settings">GameSettingsActivity</string>
+    <string name="title_activity_umpire_screen">UmpireScreenActivity</string>
+    <string name="title_activity_join_game_list">JoinGameListActivity</string>
+    <string name="title_activity_search_game">SearchGameActivity</string>
+    <string name="title_activity_game_search_result">GameSearchResultActivity</string>
+    <string name="title_activity_reset_password">ResetPasswordActivity</string>
+    <string name="title_activity_change_umpire">ChangeUmpireActivity</string>
+    <string name="browse_title"><![CDATA[Videos by Your Company]]></string>
+    <string name="related_movies">Related Videos</string>
+    <string name="vertical_grid_title"><![CDATA[Vertical Video Grid]]></string>
+    <string name="ok">OK</string>
+    <string name="pause">Pause</string>
+    <string name="stop">Stop</string>
+    <string name="init_text">00:00</string>
+    <string name="play_pause_description">Play Pause Button</string>
+    <string name="loading">Loading…</string>
+    <string name="no_video_found">No video was found</string>
+    <string name="about_app">About DemoCast Player</string>
+    <string name="version">Version: %1$s</string>
+    <string name="popular_header">Popular Videos</string>
+    <string name="preferences">PREFERENCES</string>
+    <string name="grid_view">Grid View</string>
+    <string name="error_fragment">Error Fragment</string>
+    <string name="personal_settings">Personal Settings</string>
+    <string name="watch_trailer_1">Watch trailer</string>
+    <string name="watch_trailer_2">FREE</string>
+    <string name="rent_1">Rent By Day</string>
+    <string name="rent_2">From $1.99</string>
+    <string name="buy_1">Buy and Own</string>
+    <string name="buy_2">AT $9.99</string>
+    <string name="movie">Movie</string>
+    <string name="should_start">shouldStart</string>
+    <string name="start_position">startPosition</string>
+    <string name="search_results">Search Results</string>
+    <string name="video_error_media_load_timeout">Media loading timed out</string>
+    <string name="video_error_server_inaccessible">Media server was not reachable</string>
+    <string name="video_error_unknown_error">Failed to load video</string>
+    <string name="error_fragment_message">An error occurred</string>
+    <string name="dismiss_error">Dismiss</string>
+    <string name="oops">Oops</string>
+
+    <!-- Change Profile Activity Strings -->
+
+    <string name="title_activity_crop_image">CropImage</string>
+    <string name="upload_img_desc">Upload your new profile image</string>
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
+    <string name="saving_image">Saving image</string>
+    <string name="preparing_card">Preparing card</string>
+    <string name="no_storage_card">No storage card</string>
+    <string name="not_enough_space">Not enough space</string>
+    <string name="please_signin">PLEASE SIGN IN</string>
+    <string name="promocode">RP Code</string>
+    <string name="gender">Gender</string>
+    <string name="birthday">Birthday</string>
+    <string name="address">Address</string>
+
+    <!-- Change password Activity Strings -->
+    <string name="changepassword">Change Password</string>
+    <string name="changepassword_errormessage">This is an Error Message and needs defining</string>
+    <string name="changepassword_successmessage">This is an Error Message and needs defining</string>
+
+    <!-- Edit Profile Activity Strings -->
+    <string name="edit">Edit</string>
+    <string name="update">Update</string>
+
+    <!-- Settings activity Strings -->
+    <string name="editprofile">Edit Profile</string>
+    <string name="about">About</string>
+    <string name="receive_notifications">Receive Notifications</string>
+    <string name="meet_the_team">Meet The Team</string>
+    <string name="faqs">FAQs</string>
+    <string name="terms_of_service_and_private_policy">Terms of Service and Privacy Policy</string>
+
+    <!-- Home Screen Strings -->
+    <string name="newtorpbaseball">New to RP Baseball?</string>
+    <string name="learnhowtoplay">Learn how to play</string>
+    <string name="welcomebackryan">Welcome Back</string>
+    <string name="title_activity_plays">Plays</string>
+
+    <!-- addplays activity strings -->
+
+    <string name="addplays">Add Plays</string>
+    <string name="balance">Balance:</string>
+    <string name="fortyplays">40 Plays</string>
+    <string name="twotwentyplays">220 Plays</string>
+    <string name="fivehundredplays">500 plays</string>
+    <string name="Tenplays">10 Plays</string>
+
+    <!-- Create Game Strings -->
+    <string name="createnewgame">Create Private Game</string>
+    <string name="profile">Profile</string>
+
+    <!-- footer Strings -->
+    <string name="home">home</string>
+    <string name="pointsleaderboard">Points</string>
+    <string name="accuracy">Games Played</string>
+
+    <!-- Leaderboard strings -->
+    <string name="playername">RyanWheeler749</string>
+    <string name="leaderboardpoints">48,873</string>
+    <string name="pts">PTS</string>
+    <string name="grajeda">Grajeda</string>
+
+    <!-- profileselector Strings -->
+    <string name="rings">Rings</string>
+    <string name="hits">Hits</string>
+    <string name="homeruns">Home Runs</string>
+    <string name="runsscored">Runs Scored</string>
+    <string name="games">Games</string>
+    <string name="title_activity_splash_screen">SplashScreenActivity</string>
+    <string name="title_activity_first_splash_screen">FirstSplashScreen</string>
+    <string name="signup_btn_text">Create Account</string>
+
+    <!-- Signup Activity Strings -->
+    <string name="signup_username">Username</string>
+    <string name="signup_promo_code">RP Code</string>
+    <string name="signup_password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="create_account">Create Account</string>
+
+    <!-- Change password Activity Strings -->
+    <string name="confirm">Confirm</string>
+    <string name="old_password">Old Password</string>
+
+    <!-- Create new Game activity strings -->
+    <string name="gamecreator">Game Creator</string>
+    <string name="number_of_plays">Number of plays</string>
+    <string name="cg_umpire_message">*You will be the default umpire for this game</string>
+    <string name="title_activity_create_private_game_lobby">CreatePrivateGameLobby</string>
+    <string name="title_activity_join_game2">JoinGame2</string>
+    <string name="title_activity_join_private_game">JoinPrivateGame</string>
+    <string name="title_activity_join_private_game2">JoinPrivateGame2</string>
+
+    <!-- game leader board activity Strings -->
+    <string name="LoggedInPlayerName">LoggedInPlayerName</string>
+    <string name="title_activity_game_leader_board_new">GameLeaderBoardNew</string>
+
+    <!-- umpire screen strings -->
+    <string name="mystring"><![CDATA[ <b>Hello</b> <i>World</i> ]]></string>
+    <string name="title_activity_faq">Faq</string>
+    <string name="title_activity_dismiss_notification">DismissNotification</string>
+
+</resources>

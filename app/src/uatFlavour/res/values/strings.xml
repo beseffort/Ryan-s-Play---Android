@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="baseurl">http://52.88.139.217/api/</string>
+
+</resources>

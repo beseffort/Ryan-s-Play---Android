@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:weightSum="10" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5.5"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            android:paddingLeft="@dimen/default_padding" >
+
+            <viewstyles.RoundedViewStyle
+                android:id="@+id/glbi_iv_profile_pic"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/leaderbord_profile_icon" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <fonts.HelveticaNeueCondensedBoldTextview
+                    android:id="@+id/glbi_tv_player_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/default_margin"
+                    android:text="RyanWheeler"
+                    android:textStyle="bold"
+                    android:textColor="#666666"/>
+                <fonts.HelveticaNeueCondensedBoldTextview
+                    android:id="@+id/glbi_tv_player_rank"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/default_margin"
+                    android:text="1"
+                    android:layout_below="@+id/glbi_tv_player_name"
+                    android:textStyle="bold"
+                    android:textColor="#666666"/>
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2.25"
+            android:gravity="center_vertical" >
+
+            <fonts.HelveticaNeueCondensedBoldTextview
+                android:id="@+id/glbi_tv_point"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:padding="@dimen/default_padding"
+                android:textColor="#666666"/>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2.25"
+            android:gravity="center_vertical" >
+
+            <fonts.HelveticaNeueCondensedBoldTextview
+                android:id="@+id/glbi_tv_world_rank"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:textColor="#666666"
+                android:layout_marginRight="10dp"
+                android:textStyle="bold"
+                android:text="0" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

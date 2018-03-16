@@ -1,0 +1,251 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ryansplayllc.ryansplay.GameLobbyActivity" >
+
+    <include
+        android:id="@+id/header"
+        layout="@layout/header" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/footer"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/header" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:orientation="vertical"
+                    android:padding="@dimen/default_padding" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/player_name"
+                        android:textColor="@color/red_text"
+                        android:textSize="@dimen/default_text_size" />
+
+                    <TextView
+                        android:id="@+id/my_tv_player_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/dummy_name"
+                        android:textColor="@color/default_text"
+                        android:textSize="@dimen/default_text_size" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:gravity="right"
+                    android:orientation="vertical"
+                    android:padding="@dimen/default_padding" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/no_of_plays"
+                        android:textColor="@color/red_text"
+                        android:textSize="@dimen/default_text_size" />
+
+                    <TextView
+                        android:id="@+id/gl_plays_for_points"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/dummy_no_of_plays"
+                        android:textColor="@color/default_text"
+                        android:textSize="@dimen/default_text_size" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/abc_action_bar_default_height_material"
+                android:background="@android:color/white"
+                android:padding="@dimen/default_padding" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/default_padding"
+                    android:text="@string/search_game"
+                    android:textColor="@color/red_text"
+                    android:textSize="@dimen/default_heading_size"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/default_padding" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/default_padding"
+                    android:paddingTop="@dimen/default_padding" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/search_by_game_name"
+                        android:textColor="@color/default_text"
+                        android:textSize="@dimen/default_text_size" />
+
+                    <EditText
+                        android:id="@+id/search_game_et_game_name"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/default_margin"
+                        android:background="@drawable/edit_text"
+                        android:hint="@string/game_name"
+                        android:inputType="text"
+                        android:padding="@dimen/default_padding"
+                        android:singleLine="true" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/default_padding"
+                    android:paddingTop="@dimen/default_padding" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/search_by_game_creator"
+                        android:textColor="@color/default_text"
+                        android:textSize="@dimen/default_text_size" />
+
+                    <EditText
+                        android:id="@+id/search_game_et_game_creator"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/default_margin"
+                        android:background="@drawable/edit_text"
+                        android:hint="@string/username"
+                        android:inputType="text"
+                        android:padding="@dimen/default_padding"
+                        android:singleLine="true" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/default_padding" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/search_by_game_length"
+                        android:textColor="@color/default_text"
+                        android:textSize="@dimen/default_text_size" />
+
+                    <RadioGroup
+                        android:id="@+id/plays"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="10dp" >
+
+                        <RadioButton
+                            android:id="@+id/ten_plays"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:button="@null"
+                            android:drawableLeft="@drawable/radio_button"
+                            android:drawablePadding="15dp"
+                            android:text="10 Plays"
+                            android:textColor="@color/default_text"
+                            android:textSize="@dimen/default_text_size" />
+
+                        <RadioButton
+                            android:id="@+id/twenty_plays"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/default_margin"
+                            android:button="@null"
+                            android:drawableLeft="@drawable/radio_button"
+                            android:drawablePadding="15dp"
+                            android:text="20 Plays"
+                            android:textColor="@color/default_text"
+                            android:textSize="@dimen/default_text_size" />
+                    </RadioGroup>
+
+                    <RadioGroup
+                        android:id="@+id/plays_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="10dp" >
+
+                        <RadioButton
+                            android:id="@+id/thirty_plays"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:button="@null"
+                            android:drawableLeft="@drawable/radio_button"
+                            android:drawablePadding="15dp"
+                            android:text="30 Plays"
+                            android:textColor="@color/default_text"
+                            android:textSize="@dimen/default_text_size" />
+
+                        <RadioButton
+                            android:id="@+id/all_plays"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/default_margin"
+                            android:button="@null"
+                            android:drawableLeft="@drawable/radio_button"
+                            android:drawablePadding="15dp"
+                            android:checked="true"
+                            android:text="All"
+                            android:textColor="@color/default_text"
+                            android:textSize="@dimen/default_text_size" />
+                    </RadioGroup>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/default_margin" >
+
+                <Button
+                    android:id="@+id/search_game_bt_find_game"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/green_button"
+                    android:padding="@dimen/default_padding"
+                    android:text="@string/find_your_game"
+                    android:textColor="@android:color/white" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <include
+        android:id="@+id/footer"
+        layout="@layout/footer" />
+
+</RelativeLayout>

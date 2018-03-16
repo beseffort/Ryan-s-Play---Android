@@ -1,0 +1,245 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ryansplayllc.ryansplay.LeaderBoardActivity">
+
+    <include
+        android:id="@+id/header"
+        layout="@layout/header" />
+
+    <include
+        android:id="@+id/rul_in_footer"
+        layout="@layout/footer" />
+
+    <fonts.BebasNeueBoldTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="LeaderBoards"
+        android:id="@+id/textView38"
+        android:layout_alignParentTop="true"
+        android:textColor="#ffffffff"
+        android:layout_marginTop="17dp"
+        android:textSize="21dp"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/linearLayout5"
+        android:weightSum="3"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/header"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/top_bar_points"
+            android:background="@drawable/leaderboard_toptab"
+            android:layout_weight="1"
+            android:gravity="center"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <fonts.BebasNeueBoldTextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pointsleaderboard"
+                    android:id="@+id/textView39"
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:textColor="#347296"
+                    android:layout_centerInParent="true"
+                    android:gravity="center_horizontal" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView6"
+                    android:src="@drawable/down_arrow_blue"
+                    android:layout_toRightOf="@+id/textView39"
+                    android:layout_alignParentEnd="false"
+                    android:layout_alignParentRight="false"
+                    android:layout_marginLeft="0dp"
+                    android:layout_centerVertical="true" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/top_bar_points"
+            android:layout_toRightOf="@+id/top_bar_points"
+            android:layout_toEndOf="@+id/top_bar_points"
+            android:id="@+id/top_bar_games_played"
+            android:background="@drawable/leaderboard_toptab"
+            android:layout_marginLeft="2dp"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <fonts.BebasNeueBoldTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Plays"
+                android:id="@+id/textView40"
+                android:layout_gravity="center"
+                android:layout_marginLeft="0dp"
+                android:textColor="#347296"
+                android:textStyle="bold"
+                android:textSize="16dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView7"
+                android:src="@drawable/down_arrow_blue"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center_vertical" />
+        </LinearLayout>
+
+
+
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/top_bar_games_played"
+            android:layout_toRightOf="@+id/top_bar_games_played"
+            android:layout_toEndOf="@+id/top_bar_games_played"
+            android:background="@drawable/leaderboard_toptab"
+            android:id="@+id/top_bar_date"
+            android:layout_marginLeft="2dp"
+            android:layout_weight="1"
+            >
+
+            <fonts.BebasNeueBoldTextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Biggest Game Won"
+                android:id="@+id/gs_play_by_plays_select"
+                android:layout_marginLeft="0dp"
+                android:gravity="center"
+                android:layout_centerVertical="true"
+                android:textColor="#347296"
+                android:textStyle="bold"
+                android:textSize="16dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView8"
+                android:src="@drawable/down_arrow_blue"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/gs_play_by_plays_select"
+
+                />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/leaderboardlist"
+        android:background="#ffffffff"
+        android:layout_alignParentLeft="true"
+        android:scrollbars="none"
+        android:layout_below="@+id/linearLayout5"
+        android:layout_above="@+id/linearLayout2"
+        android:layout_marginBottom="15dp"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_above="@+id/rul_in_footer"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="#ffe6e9da"
+        android:layout_marginBottom="0dp"
+        android:layout_marginTop="-20dp"
+        android:id="@+id/linearLayout2">
+
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:weightSum="1"
+            android:layout_marginBottom="0dp"
+            android:layout_marginRight="0dp"
+            android:showDividers="end">
+
+            <viewstyles.RoundedViewStyle
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/lb_current_playerPic"
+                android:background="@drawable/leaderbord_profile_icon"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true" />
+
+            <fonts.HelveticaNeueCondensedBoldTextview
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text=""
+                android:id="@+id/currentPlayerName"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:layout_toRightOf="@+id/lb_current_playerPic"
+                android:layout_alignTop="@+id/lb_current_playerPic"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"/>
+
+            <fonts.HelveticaNeueCondensedBoldTextview
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text=""
+                android:id="@+id/currentPlayerRank"
+                android:textSize="13dp"
+                android:textColor="#9A9A9A"
+                android:layout_alignLeft="@+id/currentPlayerName"
+                android:layout_below="@+id/currentPlayerName"/>
+
+            <fonts.HelveticaNeueCondensedBoldTextview
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text=""
+                android:id="@+id/currentPlayerPts"
+                android:textSize="15dp"
+                android:layout_marginLeft="130dp"
+                android:textStyle="bold"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/currentPlayerName"
+                android:layout_marginRight="15dp"/>
+
+            <fonts.HelveticaNeueCondensedBoldTextview
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/pts"
+                android:id="@+id/lb_pts_btm_label"
+                android:textSize="12dp"
+                android:layout_below="@+id/currentPlayerPts"
+                android:layout_alignRight="@+id/currentPlayerPts"
+                android:textColor="#9A9A9A" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

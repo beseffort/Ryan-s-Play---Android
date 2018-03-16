@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/game_lobby_player_list_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_item" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:weightSum="10" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="7"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <viewstyles.RoundedViewStyle
+                android:id="@+id/pl_iv_profile_pic"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:contentDescription="@string/profile_pic"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/leaderbord_profile_icon"/>
+
+            <fonts.HelveticaNeueCondensedBoldTextview
+                android:id="@+id/pl_tv_player_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/default_margin"
+                android:textSize="14dp"
+                android:textColor="#666666"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:gravity="right"
+            android:paddingRight="5dp"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/umpiremask"
+                android:src="@drawable/umpire_mask"
+                android:layout_gravity="center_vertical|start"
+                android:layout_marginRight="35dp"
+                android:layout_marginTop="2dp"
+
+                />
+
+            <fonts.HelveticaNeueCondensedBoldTextview
+                android:id="@+id/pl_tv_no_of_plays"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:padding="@dimen/default_padding"
+                android:gravity="center_vertical"
+                android:textSize="14dp"
+                android:textColor="#666666"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

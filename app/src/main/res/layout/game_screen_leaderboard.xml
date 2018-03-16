@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="250dp"
+        android:layout_height="33dp"
+        >
+
+        <viewstyles.RoundedViewStyle
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/gs_profile_image"
+            android:background="@drawable/leaderbord_profile_icon"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center_vertical"
+            android:layout_centerVertical="true"/>
+
+        <fonts.HelveticaNeueCondensedBoldTextview
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/playername"
+            android:id="@+id/lb_list_player_name"
+            android:layout_gravity="center_vertical"
+            android:textSize="13dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="#666666"
+            android:textStyle="bold"
+            android:layout_marginTop="-10dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/gs_profile_image"
+            android:textIsSelectable="false"
+            android:ellipsize="end"
+            android:singleLine="true"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/umpire_mask"
+            android:layout_toLeftOf="@+id/lb_list_player_total_points"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="3dp"
+            android:id="@+id/lb_umpire_mask_image"
+            />
+        <fonts.HelveticaNeueCondensedBoldTextview
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="2400"
+            android:id="@+id/lb_list_player_total_points"
+            android:textSize="13dp"
+            android:layout_marginLeft="0dp"
+            android:textColor="#666666"
+            android:textStyle="bold"
+            android:layout_marginTop="-10dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:gravity="right"
+            />
+
+    </RelativeLayout>
+</RelativeLayout>

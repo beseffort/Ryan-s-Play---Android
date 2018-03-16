@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="footer">#212121</color>
+    <color name="splash_pic_back_ground">#030303</color>
+    <color name="header_green">#4e871c</color>
+    <color name="footer_black">#212121</color>
+    <color name="red_text">#b9422a</color>
+    <color name="default_text">#000000</color>
+    <color name="green_button_start">#63ac07</color>
+    <color name="green_button_end">#4f891b</color>
+    <color name="green_alpha">#99528e18</color>
+    <color name="white_alpha">#55ffffff</color>
+    <color name="gray_button_start">#5f5f5f</color>
+    <color name="gray_button_end">#353535</color>
+    <color name="selected_text">#62a909</color>
+    <color name="list_selected">#a3c873</color>
+
+</resources>

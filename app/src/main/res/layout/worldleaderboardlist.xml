@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        >
+
+        <viewstyles.RoundedViewStyle
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/player_playerPic"
+            android:background="@drawable/leaderbord_profile_icon"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true" />
+
+        <fonts.HelveticaNeueCondensedBoldTextview
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Player Name"
+            android:id="@+id/playerName"
+            android:textSize="15dp"
+            android:textColor="#666666"
+            android:textStyle="bold"
+            android:layout_toRightOf="@+id/player_playerPic"
+            android:layout_alignTop="@+id/player_playerPic"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="10dp"/>
+
+        <fonts.HelveticaNeueCondensedBoldTextview
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="#1"
+            android:id="@+id/playerRank"
+            android:textColor="#999999"
+            android:textSize="13dp"
+            android:layout_below="@+id/playerName"
+            android:layout_alignLeft="@+id/playerName"/>
+
+        <fonts.HelveticaNeueCondensedBoldTextview
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="0"
+            android:id="@+id/playerPts"
+            android:textSize="15dp"
+            android:textColor="#666666"
+            android:textStyle="bold"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/playerName"
+            android:layout_marginRight="15dp"
+            />
+
+        <fonts.HelveticaNeueCondensedBoldTextview
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/pts"
+            android:id="@+id/ptsLabel"
+            android:textColor="#999999"
+            android:textSize="12dp"
+            android:layout_below="@+id/playerPts"
+            android:layout_alignRight="@+id/playerPts"/>
+    </RelativeLayout>
+</RelativeLayout>

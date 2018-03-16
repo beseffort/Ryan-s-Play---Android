@@ -1,0 +1,491 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="false"
+    tools:context=".MyAccountActivity"
+    android:background="#ffffff">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/header_layout">
+
+        <include
+            android:id="@+id/header"
+            layout="@layout/header" />
+        <fonts.BebasNeueBoldTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Profile"
+            android:id="@+id/textView15"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:textColor="#ffffffff"
+            android:textStyle="bold"
+            android:textSize="21dp"
+            android:layout_marginTop="18dp" />
+
+        <fonts.HelveticaNeueCondensedBoldTextview
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cancel"
+            android:textColor="#ffffff"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:layout_alignParentRight="true"
+            android:visibility="invisible"
+            android:layout_marginRight="10dp"
+            android:id="@+id/signup_cancel_text_view"
+            android:layout_alignBottom="@+id/textView15" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/header_layout"
+        android:id="@+id/ch_profile_err_layout"
+        android:visibility="gone"
+
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/erow"
+            android:id="@+id/ch_profile_err_icon"
+            android:layout_toLeftOf="@+id/ch_profile_err_msg"
+            android:layout_centerVertical="true"
+
+            />
+
+        <fonts.HelveticaNeueCondensedBoldTextview
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ch_profile_err_msg"
+            android:textColor="#ffd64541"
+            android:textStyle="bold"
+            android:text="error"
+            android:textSize="15dp"
+            android:layout_marginLeft="5dp"
+            android:layout_centerInParent="true"
+            android:gravity="top"
+            />
+        </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/ch_profile_main_scroll_View"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/my_in_footer"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/ch_profile_err_layout" >
+
+
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="#ffffff"
+            android:gravity="center_vertical"
+            android:id="@+id/ch_profile_main_layout"
+
+            >
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/default_padding"
+                android:background="#00ffffff"
+                android:id="@+id/profile_image_layout">
+
+                <viewstyles.RoundedViewStyle
+                    android:id="@+id/change_password_iv_profile_pic"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/profile_pic"
+                    android:background="@drawable/leaderbord_profile_icon"
+                    />
+
+                <RelativeLayout
+                    android:id="@+id/loadingPanel"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:gravity="center"
+
+                    android:layout_marginLeft="0dp"
+
+                    android:background="#00ffffff">
+
+                    <ProgressBar
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:indeterminate="true"
+                        android:id="@+id/progressBar" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <viewstyles.RoundedViewStyle
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/change_profile_bt_upload_image"
+
+                android:src="@drawable/camera"
+                android:layout_gravity="center_horizontal"
+                android:visibility="visible"
+                android:layout_alignBottom="@+id/profile_image_layout"
+                android:layout_alignRight="@+id/profile_image_layout"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="10dp" />
+
+
+
+            <fonts.HelveticalNeueCondensedBoldEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/change_profile_ed_first_name"
+                android:layout_gravity="right"
+                android:hint="FirstName"
+                android:background="@drawable/smallline"
+                android:textColor="#666666"
+                android:textSize="@dimen/sign_up_text_size"
+                android:textStyle="bold"
+                android:singleLine="true"
+                android:maxLines="1"
+                android:maxLength="20"
+                android:lines="1"
+                android:layout_alignParentTop="true"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_toRightOf="@+id/profile_image_layout"
+                android:gravity="center_vertical" />
+
+            <fonts.HelveticalNeueCondensedBoldEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/change_profile_ed_last_name"
+                android:layout_below="@+id/change_profile_ed_first_name"
+                android:layout_toRightOf="@+id/profile_image_layout"
+                android:hint="LastName"
+                android:background="@drawable/smallline"
+                android:textColor="#666666"
+                android:textSize="@dimen/sign_up_text_size"
+                android:textStyle="bold"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:lines="1"
+                android:maxLength="20"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:gravity="center_vertical" />
+
+            <fonts.BebasNeueBoldTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/username"
+                android:id="@+id/textView18"
+                android:layout_marginLeft="20dp"
+                android:layout_below="@+id/profile_image_layout"
+                android:textSize="@dimen/sign_up_text_size"
+                android:textStyle="bold"
+                android:textColor="#347296"
+                android:visibility="visible"
+                android:layout_marginTop="15dp" />
+
+
+            <fonts.HelveticalNeueCondensedBoldEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:ems="10"
+                android:id="@+id/change_profile_tv_email"
+                android:hint="@string/email"
+                android:background="@drawable/smallline"
+                android:textSize="@dimen/sign_up_text_size"
+                android:textColor="#666666"
+                android:textStyle="bold"
+                android:paddingLeft="10dp"
+                android:enabled="false"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@+id/profile_image_layout"
+                android:layout_below="@+id/change_profile_ed_last_name"
+                android:visibility="visible"
+                android:gravity="center_vertical" />
+
+
+
+
+
+            <fonts.HelveticalNeueCondensedBlackEditText
+                android:id="@+id/change_profile_ed_user_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/smallline"
+                android:hint="@string/username"
+                android:singleLine="true"
+                android:textColor="#666666"
+                android:textSize="@dimen/sign_up_text_size"
+                android:textStyle="bold"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:enabled="false"
+                android:visibility="visible"
+                android:layout_below="@+id/change_profile_tv_email"
+                android:layout_alignLeft="@+id/change_profile_tv_email"
+                android:gravity="center_vertical" />
+
+            <fonts.HelveticaNeueCondensedBoldTextview
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="This is your RP Code"
+                android:textSize="10dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/change_profile_ed_user_name"
+                android:layout_marginTop="12dp"
+                android:textColor="#666666"
+                android:layout_marginRight="10dp"/>
+
+            <fonts.BebasNeueBoldTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/address"
+
+                android:textColor="#347296"
+                android:textSize="@dimen/sign_up_text_size"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="20dp"
+                android:layout_below="@+id/edit_profile_dateof_birth"
+
+                android:id="@+id/textView14"
+                android:textStyle="bold"
+                android:visibility="gone"
+                android:layout_marginTop="10dp" />
+
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/edit_profile_gender_spinner"
+                android:layout_gravity="right"
+                android:background="@drawable/smallline"
+                android:spinnerMode="dropdown"
+                android:paddingLeft="-10dp"
+                android:visibility="visible"
+                android:layout_below="@+id/change_profile_ed_user_name"
+                android:layout_alignLeft="@+id/change_profile_ed_user_name"
+                android:gravity="center_vertical" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/button3"
+                android:layout_gravity="right"
+                android:background="@drawable/down_arrow_blue"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="10dp"
+                android:visibility="visible"
+                android:layout_alignRight="@+id/edit_profile_gender_spinner"
+                android:layout_below="@+id/change_profile_ed_user_name"
+                android:layout_marginTop="12dp" />
+
+
+            <fonts.HelveticalNeueCondensedBoldEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/ch_prof_address"
+                android:layout_gravity="right"
+                android:layout_below="@+id/edit_profile_dateof_birth"
+                android:layout_alignLeft="@+id/edit_profile_dateof_birth"
+                android:text="Address"
+                android:background="@drawable/smallline"
+                android:textStyle="bold"
+                android:textColor="#666666"
+                android:textSize="@dimen/sign_up_text_size"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:lines="1"
+                android:maxLines="1"
+                android:maxLength="30"
+                android:singleLine="true"
+                android:visibility="gone"
+                android:gravity="center_vertical" />
+
+            <Spinner
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:id="@+id/edit_profile_city_spinner"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/smallline"
+                android:layout_below="@+id/ch_prof_address"
+                android:layout_alignLeft="@+id/ch_prof_address"
+                android:spinnerMode="dropdown"
+                android:paddingLeft="-10dp"
+                android:paddingBottom="5dp"
+                android:visibility="gone"
+                android:gravity="center_vertical" />
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="1dp"
+                android:layout_height="40dp"
+                android:layout_gravity="right"
+                android:background="#E5E8DA"
+                android:visibility="gone"
+                android:layout_alignRight="@+id/edit_profile_city_spinner"
+                android:layout_below="@id/ch_prof_address"></LinearLayout>
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/button2"
+                android:background="@drawable/down_arrow_blue"
+                android:layout_alignRight="@+id/edit_profile_city_spinner"
+                android:layout_below="@+id/ch_prof_address"
+                android:visibility="gone"
+                android:layout_marginTop="12dp"
+                android:layout_marginRight="10dp"/>
+
+
+
+            <fonts.HelveticalNeueCondensedBoldEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/ch_prof_pincod"
+                android:background="@drawable/smallline"
+                android:textStyle="bold"
+                android:textColor="#666666"
+                android:textSize="@dimen/sign_up_text_size"
+                android:paddingLeft="20dp"
+                android:paddingRight="10dp"
+                android:singleLine="true"
+                android:minLines="0"
+                android:maxLines="1"
+                android:maxLength="10"
+                android:lines="1"
+                android:hint="Zip Code"
+                android:inputType="number"
+                android:visibility="gone"
+                android:layout_below="@id/ch_prof_address"
+                android:layout_toRightOf="@+id/edit_profile_city_spinner"
+                android:gravity="center_vertical" />
+
+
+            <fonts.HelveticalNeueCondensedBoldEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/edit_profile_dateof_birth"
+                android:layout_gravity="right"
+                android:textColor="#666666"
+                android:hint="Date of Birth"
+                android:textSize="@dimen/sign_up_text_size"
+                android:background="@drawable/smallline"
+                android:textStyle="bold"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:visibility="visible"
+                android:layout_below="@id/edit_profile_gender_spinner"
+                android:layout_alignLeft="@+id/edit_profile_gender_spinner"
+                android:gravity="center_vertical" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/smallline"
+                android:layout_below="@id/edit_profile_gender_spinner"
+                android:layout_alignLeft="@+id/edit_profile_gender_spinner"
+                android:id="@+id/date_of_birth_topview" />
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView12"
+                android:src="@drawable/down_arrow_blue"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/edit_profile_gender_spinner"
+                android:layout_alignRight="@+id/edit_profile_dateof_birth"
+
+                />
+
+
+            <fonts.BebasNeueBoldTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/gender"
+                android:textColor="#347296"
+                android:textSize="@dimen/sign_up_text_size"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginBottom="0dp"
+                android:id="@+id/textView13"
+                android:textStyle="bold"
+                android:visibility="visible"
+                android:layout_below="@+id/change_profile_ed_user_name"
+                android:layout_marginTop="13dp" />
+
+            <fonts.BebasNeueBoldTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/birthday"
+                android:id="@+id/textView16"
+                android:textColor="#347296"
+                android:textSize="@dimen/sign_up_text_size"
+                android:textStyle="bold"
+                android:visibility="visible"
+                android:layout_below="@+id/edit_profile_gender_spinner"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="13dp" />
+
+
+            <Button
+                android:id="@+id/change_profile_bt_update"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_background"
+                android:padding="@dimen/default_padding"
+                android:text="@string/update"
+                android:textColor="@drawable/textcolor"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="0dp"
+                android:layout_below="@+id/edit_profile_city_spinner"
+                android:visibility="visible"
+                android:layout_centerHorizontal="true"/>
+
+            <Button
+                android:id="@+id/seefullstats"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/signup_bar"
+                android:text="See Full Stats"
+                android:textColor="@android:color/white"
+                android:layout_below="@+id/change_profile_bt_update"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:visibility="visible"
+                android:layout_centerHorizontal="true"/>
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+    <include
+        android:id="@+id/my_in_footer"
+        layout="@layout/footer" />
+
+</RelativeLayout>

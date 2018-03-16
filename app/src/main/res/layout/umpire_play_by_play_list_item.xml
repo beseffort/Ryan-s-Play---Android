@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    >
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="33dp"
+        android:id="@+id/relativeLayout12"
+        android:layout_marginRight="7dp">
+
+        <viewstyles.RoundedViewStyle
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/us_pbp_image"
+            android:background="@drawable/red_small_circle"
+            android:layout_marginLeft="37dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="65dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <fonts.HelveticaNeueCondensedBoldTextview
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="HIT TO RIGHT Field"
+            android:id="@+id/hitPosition"
+            android:layout_gravity="center_vertical"
+            android:textSize="10sp"
+            android:layout_marginLeft="10dp"
+            android:textColor="#ff666666"
+            android:textStyle="bold"
+            android:layout_marginTop="-10dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/us_pbp_image"
+            android:textIsSelectable="false" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="11"
+            android:id="@+id/playNo"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:textStyle="bold"
+            android:textColor="#333333"
+            android:textSize="10sp" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

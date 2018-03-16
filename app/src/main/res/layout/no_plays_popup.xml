@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#9e000000"
+        android:layout_centerInParent="true"
+        android:id="@+id/no_plays_popup_up"
+        >
+
+        <RelativeLayout
+            android:layout_width="320dp"
+            android:layout_height="220dp"
+            android:layout_centerInParent="true"
+            android:background="#ffffff">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/close_blue"
+                android:id="@+id/noplayspopup_close"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                />
+            <fonts.BebasNeueBoldTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="You do not have enough Plays in your Play Bank. Use an RP Code, invite a friend, or purchase more Plays to get back in the game!"
+                android:textColor="#347296"
+                android:id="@+id/no_plays_text"
+                android:textStyle="bold"
+                android:textSize="17dp"
+                android:lineSpacingExtra="5dp"
+                android:layout_marginTop="5dp"
+                android:padding="10dp"
+                android:gravity="center"
+                android:layout_below="@+id/noplayspopup_close"
+                />
+
+            <fonts.BebasNeueBoldButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/signup_bar"
+                android:text="ADD PLAYS"
+                android:id="@+id/noplayspopup_addPlays"
+                android:textColor="#ffffff"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:layout_below="@+id/no_plays_text"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                />
+        </RelativeLayout>
+    </RelativeLayout>
+

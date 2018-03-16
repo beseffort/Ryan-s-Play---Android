@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/game_screen_play_info_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:layout_below="@+id/game_screen_game_info"
+    android:gravity="center_vertical">
+
+    <RelativeLayout
+        android:id="@+id/game_screen_play_info_ll_time_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+
+        android:layout_marginLeft="20dp">
+
+
+        <fonts.BebasNeueBoldTextView
+            android:text="0"
+            android:layout_width="wrap_content"
+            android:id="@+id/game_screen_tv_count_down"
+            android:layout_height="wrap_content"
+            android:textColor="#004770"
+            android:textStyle="bold"
+            android:textSize="19dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            />
+
+        <fonts.BebasNeueBoldTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sec"
+            android:textStyle="bold"
+            android:textColor="#666666"
+            android:textSize="15dp"
+            android:layout_below="@+id/game_screen_tv_count_down"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="-5dp"/>
+        <ProgressBar
+            android:id="@+id/TaskProgress_Inner"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="55dip"
+            android:layout_height="55dip"
+            android:layout_centerInParent="true"
+            android:indeterminate="false"
+            android:max="400"
+            android:progress="0"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:progressDrawable="@drawable/circularinner"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/game_screen_play_info_ll_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:visibility="visible">
+
+        <RelativeLayout
+            android:id="@+id/game_screen_play_info_bt_close_play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/closedguesses"
+            android:padding="@dimen/default_padding"
+            android:textColor="@android:color/white"
+            >
+
+
+
+
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+
+
+
+</RelativeLayout>

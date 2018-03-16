@@ -1,0 +1,60 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ryansplayllc.ryansplay.Rules"
+    android:background="#ffffff">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relativeLayout11"
+        android:layout_alignParentTop="true">
+        <include
+            android:id="@+id/header"
+            layout="@layout/header" />
+
+
+        <fonts.BebasNeueBoldTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Learn  How to Play"
+            android:id="@+id/textView50"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:textSize="21dp"
+            android:textStyle="bold"
+            android:textColor="#ffffff" />
+    </RelativeLayout>
+
+        <WebView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rules_webView"
+            android:layout_below="@+id/relativeLayout11"
+            android:layout_above="@+id/rules_play_info"
+            android:layout_marginBottom="5dp"
+            >
+        </WebView>
+
+    <fonts.BebasNeueBoldButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Play Ball!"
+        android:id="@+id/rules_play_info"
+        android:background="@drawable/signup_bar"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ffffff"
+        android:textSize="21dp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        android:layout_above="@+id/st_in_footer"
+        android:layout_marginBottom="5dp"
+        />
+
+        <include
+            android:id="@+id/st_in_footer"
+            layout="@layout/footer" />
+
+</RelativeLayout>

@@ -1,0 +1,306 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ryansplayllc.ryansplay.CreateNewGameActivity"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <include
+            android:id="@+id/header"
+            layout="@layout/header" />
+
+        <fonts.BebasNeueBoldTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/addplays"
+            android:id="@+id/textView28"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:textColor="#ffffffff"
+            android:layout_marginTop="17dp"
+            android:textSize="21dp" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="55dp"
+        android:background="#f6f7f2">
+
+
+        <fonts.BebasNeueBoldTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/balance"
+            android:id="@+id/balanceLabel"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textColor="#ff347296"
+            android:textStyle="bold"
+            android:layout_marginLeft="20dp"
+            android:textSize="17dp" />
+        <fonts.BebasNeueBoldTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="100"
+            android:id="@+id/addplays_plays_in_hand"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/balanceLabel"
+
+            android:textColor="#ff347296"
+            android:textStyle="bold"
+            android:layout_marginLeft="5dp"
+            android:textSize="17dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="98dp"
+        android:background="#ffffffff">
+
+        <FrameLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/signup_bar"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:tag="plays20"
+            android:onClick="buySomePlays"
+            android:id="@+id/linearLayout">
+
+            <fonts.BebasNeueBoldTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="20 Plays"
+                android:id="@+id/textView30"
+                android:textStyle="bold"
+                android:textColor="#ffffffff"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="0dp"
+                android:layout_gravity="center_vertical"/>
+
+            <fonts.BebasNeueBoldTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="$0.99"
+
+                android:id="@+id/textView31"
+                android:textStyle="bold"
+                android:textColor="#ffffffff"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_gravity="center_vertical|right"
+                android:layout_marginRight="25dp" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/signup_bar"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/linearLayout"
+            android:layout_alignLeft="@+id/linearLayout"
+            android:layout_alignStart="@+id/linearLayout"
+            android:tag="plays50"
+            android:onClick="buySomePlays"
+            android:id="@+id/playsbtn200">
+
+            <fonts.BebasNeueBoldTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="50 Plays"
+                android:id="@+id/textView32"
+                android:textStyle="bold"
+                android:textColor="#ffffffff"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="0dp"
+                android:layout_gravity="center_vertical" />
+
+            <fonts.BebasNeueBoldTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="$1.99"
+                android:id="@+id/textView33"
+                android:textStyle="bold"
+                android:textColor="#ffffffff"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_gravity="center_vertical|right"
+                android:layout_marginRight="25dp" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/signup_bar"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/playsbtn200"
+            android:id="@+id/playsbtn100"
+            android:tag="plays200"
+            android:onClick="buySomePlays"
+            >
+
+            <fonts.BebasNeueBoldTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="200 Plays"
+                android:id="@+id/textView34"
+                android:textStyle="bold"
+                android:textColor="#ffffffff"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="0dp"
+                android:layout_gravity="center_vertical" />
+
+            <fonts.BebasNeueBoldTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="$4.99"
+                android:id="@+id/textView35"
+                android:textStyle="bold"
+                android:textColor="#ffffffff"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_gravity="center_vertical|right"
+                android:layout_marginRight="25dp" />
+        </FrameLayout>
+        <FrameLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/signup_bar"
+            android:layout_below="@+id/playsbtn100"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:tag="plays500"
+            android:onClick="buySomePlays"
+            android:id="@+id/frameLayout">
+
+            <fonts.BebasNeueBoldTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="500 Plays"
+                android:id="@+id/textView36"
+                android:textStyle="bold"
+                android:textColor="#ffffffff"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="0dp"
+                android:layout_gravity="center_vertical" />
+
+            <fonts.BebasNeueBoldTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="$9.99"
+
+                android:textStyle="bold"
+                android:textColor="#ffffffff"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_gravity="center_vertical|right"
+                android:layout_weight="0.38"
+                android:layout_marginRight="25dp" />
+        </FrameLayout>
+        <FrameLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/signup_bar"
+            android:id="@+id/plays1000"
+            android:layout_below="@+id/frameLayout"
+            android:layout_centerHorizontal="true"
+            android:onClick="buySomePlays"
+            android:tag="plays1000"
+            android:layout_marginTop="20dp">
+
+            <fonts.BebasNeueBoldTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="1000 Plays"
+
+                android:textStyle="bold"
+                android:textColor="#ffffffff"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="0dp"
+                android:layout_gravity="center_vertical" />
+
+            <fonts.BebasNeueBoldTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="$14.99"
+                android:id="@+id/textView37"
+                android:textStyle="bold"
+                android:textColor="#ffffffff"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_gravity="center_vertical|right"
+                android:layout_weight="0.38"
+                android:layout_marginRight="25dp" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/inviteFrns"
+            android:background="@drawable/signup_bar"
+            android:layout_below="@+id/plays1000"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp">
+
+            <fonts.BebasNeueBoldTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="10 Plays"
+
+                android:textStyle="bold"
+                android:textColor="#ffffffff"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="0dp"
+                android:layout_gravity="center_vertical" />
+
+            <fonts.BebasNeueBoldTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="INVITE A FRIEND"
+                android:id="@+id/INVITEAFRIEND"
+                android:textStyle="bold"
+                android:textColor="#ffffffff"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_gravity="center_vertical|right"
+                android:layout_weight="0.38"
+                android:layout_marginRight="25dp" />
+        </FrameLayout>
+
+    </RelativeLayout>
+    <include
+        android:id="@+id/st_in_footer"
+        layout="@layout/footer" />
+
+
+</RelativeLayout>

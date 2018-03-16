@@ -1,0 +1,242 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ryansplayllc.ryansplay.CreateNewGameActivity" >
+
+    <include
+        android:id="@+id/header"
+        layout="@layout/header" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/footer"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/header"
+        android:background="#ffffff">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="15dp"
+                    android:paddingTop="0dp"
+                    android:paddingLeft="10dp">
+
+                    <fonts.BebasNeueBoldTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/gamecreator"
+                        android:textColor="#347296"
+                        android:textSize="@dimen/sign_up_text_size"
+                        android:layout_marginTop="0dp"
+                        android:id="@+id/textView11"
+                        android:textStyle="bold" />
+
+                    <fonts.HelveticalNeueCondensedBoldEditText
+                        android:id="@+id/game_create_tv_player_name"
+                        android:layout_width="230dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/smallline"
+                        android:hint="Creator"
+                        android:singleLine="true"
+                        android:layout_gravity="center_horizontal|right"
+                        android:layout_marginBottom="0dp"
+                        android:layout_marginTop="-27dp"
+                        android:layout_marginLeft="0dp"
+                        android:textSize="@dimen/sign_up_text_size"
+                        android:enabled="false"
+                        android:textColor="#347296"
+                        android:paddingLeft="@dimen/default_padding"
+                        android:paddingRight="@dimen/default_padding"
+                        android:paddingBottom="@dimen/editext_padding_down"
+                        android:textStyle="bold"
+                        />
+
+                    <fonts.BebasNeueBoldTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/game_name"
+                        android:textColor="#347296"
+                        android:textSize="@dimen/sign_up_text_size"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="10dp"
+                        android:textStyle="bold" />
+
+                    <fonts.HelveticalNeueCondensedBoldEditText
+                        android:id="@+id/cg_et_game_name"
+                        android:layout_width="230dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/smallline"
+                        android:hint="@string/game_name"
+                        android:singleLine="true"
+                        android:layout_gravity="center_vertical|right"
+                        android:layout_marginBottom="0dp"
+                        android:layout_marginTop="-27dp"
+                        android:textSize="@dimen/sign_up_text_size"
+                        android:textColor="#666666"
+                        android:paddingLeft="@dimen/default_padding"
+                        android:paddingRight="@dimen/default_padding"
+                        android:paddingBottom="@dimen/editext_padding_down"
+                        android:textStyle="bold"
+                        android:inputType="textWebEmailAddress"/>
+
+
+
+                    <fonts.BebasNeueBoldTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="@string/number_of_plays"
+                        android:id="@+id/textView7"
+                        android:layout_gravity="center|left"
+                        android:textSize="@dimen/sign_up_text_size"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginTop="15dp"
+                        android:textColor="#347296"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="0dp"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="-30dp">
+
+                        <RadioGroup
+                            android:id="@+id/plays"
+                            android:layout_width="230dp"
+                            android:layout_height="40dp"
+                            android:orientation="horizontal"
+                            android:padding="10dp"
+                            android:layout_marginLeft="0dp"
+                            android:background="@drawable/smallline"
+                            android:layout_gravity="right"
+                            android:layout_marginBottom="0dp">
+
+                            <RadioButton
+                                android:id="@+id/game_length_10"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:button="@null"
+                                android:checked="true"
+                                android:drawableLeft="@drawable/radio_button"
+                                android:drawablePadding="5dp"
+                                android:text="5"
+                                android:textColor="#666666"
+                                android:textSize="14dp"
+                                android:layout_marginLeft="8dp"
+                                android:paddingRight="0dp"
+                                android:paddingLeft="0dp" />
+
+                            <RadioButton
+                                android:id="@+id/game_length_20"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="8dp"
+                                android:button="@null"
+                                android:drawableLeft="@drawable/radio_button"
+                                android:drawablePadding="5dp"
+                                android:text="10"
+                                android:textColor="#666666"
+                                android:textSize="14dp"
+                                android:checked="false" />
+
+                            <RadioButton
+                                android:id="@+id/game_length_30"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="8dp"
+                                android:button="@null"
+                                android:drawableLeft="@drawable/radio_button"
+                                android:drawablePadding="5dp"
+                                android:text="20"
+                                android:textColor="#666666"
+                                android:textSize="14dp"
+                                android:checked="false" />
+                        </RadioGroup>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/default_padding"
+                    android:paddingTop="@dimen/default_padding" >
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="100dp"
+                        android:orientation="horizontal"
+                        android:paddingBottom="@dimen/default_padding"
+                        android:paddingTop="@dimen/default_padding"
+                        android:weightSum="2" >
+
+                        <Button
+                            android:id="@+id/cg_bt_create_game"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="0dp"
+                            android:layout_weight="1"
+                            android:padding="@dimen/default_padding"
+                            android:text="@string/create_game"
+                            android:textColor="@drawable/textcolor"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_centerHorizontal="true"
+                            android:background="@drawable/button_background" />
+                        <fonts.HelveticalNeueTextview
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_centerHorizontal="true"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="@string/cg_umpire_message"
+                            android:id="@+id/textView12"
+                            android:layout_above="@+id/cg_bt_create_game"
+                            android:layout_marginBottom="0dp"
+                            android:layout_marginLeft="8dp"
+                            android:textColor="#666666"
+                            android:textSize="13dp"
+                            android:layout_marginTop="0dp"
+                            android:layout_alignParentBottom="true" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <include
+        android:id="@+id/footer"
+        layout="@layout/footer" />
+
+    <fonts.BebasNeueBoldTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/createnewgame"
+        android:id="@+id/textView25"
+        android:layout_above="@+id/scrollView1"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ffffffff"
+        android:layout_marginBottom="15dp"
+        android:textSize="21dp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

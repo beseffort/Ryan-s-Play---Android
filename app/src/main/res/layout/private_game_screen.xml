@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"
+    android:id="@+id/relativeLayout5"
+    android:layout_marginTop="0dp"
+    android:layout_marginBottom="0dp">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/baseball_field"
+        android:layout_alignParentTop="true"
+        android:id="@+id/baseball_field" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_openplay_off"
+        android:layout_alignTop="@+id/baseball_field"
+        android:layout_alignLeft="@+id/baseball_field"
+        android:layout_alignStart="@+id/baseball_field"
+        android:layout_marginBottom="0dp"
+        android:layout_marginTop="-20dp"
+        android:layout_marginLeft="-20dp"
+        android:id="@+id/relativeLayout6" />
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_openplay_off"
+
+        android:layout_alignTop="@+id/relativeLayout6"
+        android:layout_alignRight="@+id/baseball_field"
+        android:layout_alignEnd="@+id/baseball_field"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="-10dp"
+        android:id="@+id/relativeLayout9" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_at_bat_off"
+
+       android:layout_alignBottom="@+id/baseball_field"
+        android:id="@+id/relativeLayout7" />
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_hit_off"
+        android:id="@+id/hit"
+
+       android:layout_alignBottom="@+id/baseball_field"
+        android:layout_alignRight="@+id/baseball_field"
+        android:layout_alignEnd="@+id/baseball_field"
+        android:layout_marginRight="40dp"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_scorerun_off"
+
+        android:layout_alignRight="@+id/baseball_field"
+        android:layout_above="@+id/hit"
+
+        android:layout_marginRight="10dp"
+        android:id="@+id/relativeLayout8" />
+
+    <!--Position Locations-->
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/position_lf_half"
+
+
+
+
+        android:layout_below="@+id/relativeLayout6"
+        android:layout_alignRight="@+id/relativeLayout7"
+        android:layout_alignEnd="@+id/relativeLayout7"
+        android:layout_marginTop="21dp"
+        android:id="@+id/game_screen_textView_lf" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/position_cf_half"
+        android:layout_toRightOf="@+id/game_screen_textView_lf"
+        android:layout_alignTop="@+id/game_screen_textView_lf"
+
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="-30dp" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/position_rf_half"
+        android:layout_toRightOf="@+id/game_screen_textView_lf"
+        android:layout_alignTop="@+id/game_screen_textView_lf"
+        android:id="@+id/game_screen_textView_rf"
+
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="20dp" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/position_ss_half"
+        android:id="@+id/game_screen_textView_ss"
+        android:layout_below="@+id/game_screen_textView_lf"
+        android:layout_toRightOf="@+id/game_screen_textView_lf"
+        android:layout_marginLeft="-15dp"
+        android:layout_marginTop="15dp"
+        />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/position_ss_half"
+        android:id="@+id/game_screen_textView_2b"
+        android:layout_below="@+id/game_screen_textView_rf"
+        android:layout_alignLeft="@+id/game_screen_textView_rf"
+        android:layout_marginLeft="-25dp"
+        android:layout_marginTop="25dp"
+
+        />
+
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/position_3b_half"
+        android:id="@+id/game_screen_textView_3b"
+
+
+        android:layout_above="@+id/relativeLayout7"
+        android:layout_toRightOf="@+id/relativeLayout7"
+        android:layout_toEndOf="@+id/relativeLayout7"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="-15dp"
+        android:layout_marginLeft="5dp" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/position_3b_half"
+        android:id="@+id/game_screen_textView_1b"
+
+
+        android:layout_alignTop="@+id/game_screen_textView_3b"
+        android:layout_toLeftOf="@+id/hit"
+        android:layout_toStartOf="@+id/hit"
+        android:layout_marginRight="7dp"
+        android:layout_marginTop="-1dp" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/position_3b_half"
+        android:id="@+id/game_screen_textView_p"
+
+
+       android:layout_below="@+id/game_screen_textView_2b"
+        android:layout_toRightOf="@+id/game_screen_textView_3b"
+
+
+        android:layout_marginRight="0dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="-1dp" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/position_3b_half"
+        android:id="@+id/game_screen_textView_c"
+
+
+        android:layout_below="@+id/game_screen_textView_p"
+        android:layout_toRightOf="@+id/game_screen_textView_3b"
+
+
+        android:layout_marginRight="0dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="10dp" />
+
+    <fonts.BebasNeueBoldTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Ryans Tuesday 20 Play Game"
+        android:id="@+id/textView58"
+        android:layout_below="@+id/baseball_field"
+        android:layout_alignLeft="@+id/game_screen_textView_lf"
+        android:layout_alignStart="@+id/game_screen_textView_lf"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:textColor="#347296"
+        android:textStyle="bold"
+        />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:id="@+id/linearLayout4"
+        android:layout_below="@+id/textView58"
+        android:layout_toLeftOf="@+id/relativeLayout9"
+        android:layout_toStartOf="@+id/relativeLayout9"
+        android:layout_marginTop="10dp">
+
+        <fonts.BebasNeueBoldTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Last Play :"
+            android:id="@+id/textView59"
+            android:layout_alignTop="@+id/linearLayout4"
+            android:layout_toRightOf="@+id/relativeLayout6"
+            android:layout_toEndOf="@+id/relativeLayout6"
+            android:textSize="10dp"
+            android:textStyle="bold"/>
+
+        <fonts.BebasNeueBoldTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="HIT TO RIGHT FIELD"
+            android:id="@+id/gs_user_rank"
+            android:textSize="10dp"
+            android:gravity="center"
+            android:textStyle="bold"/>
+
+        <fonts.BebasNeueBoldTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text=",Runs Scored+"
+            android:id="@+id/textView65"
+            android:textSize="10dp"
+            android:textStyle="bold"/>
+
+        <fonts.BebasNeueBoldTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="23"
+            android:id="@+id/textView67"
+            android:textSize="10dp"
+            android:gravity="center"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <fonts.BebasNeueBoldTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Play#"
+        android:id="@+id/textView73"
+        android:gravity="center_horizontal"
+        android:layout_above="@+id/relativeLayout9"
+        android:layout_toRightOf="@+id/game_screen_textView_3b"
+        android:layout_toEndOf="@+id/game_screen_textView_3b"
+        android:layout_marginBottom="-10dp"
+        android:textColor="#347296"
+        android:textStyle="bold"
+        />
+
+
+
+</RelativeLayout>
+
+
+</RelativeLayout>

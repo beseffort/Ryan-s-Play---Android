@@ -1,0 +1,19 @@
+<resources>
+    <declare-styleable name="circleview">
+        <attr name="cRadius" format="integer" />
+        <attr name="cFillColor" format="color" />
+        <attr name="cStrokeColor" format="color" />
+        <attr name="cAngleStart" format="integer" />
+        <attr name="cAngleEnd" format="integer" />
+    </declare-styleable>
+
+
+    <string name="us_bottom_text"><b>Result should include the first defender to have <i>control</i> of the baseball.</b></string>
+    <string name="rank_st"><sup>st</sup></string>
+    <string name="rank_nd"><span>1<sup>nd</sup></span></string>
+    <string name="rank_rd"><sup>rd</sup></string>
+    <string name="rank_th"><sup>th</sup></string>
+
+    <string name="faq_que1"><span style="text-align:justify"> 1. How does the app know which game I am watching? </span></string>
+    <string name="faq_ans1"><span style="text-align:justify">The app does NOT know which game you are watching. The umpire is responsible for keeping the app in sync with the live game and inputting the results of the live game to award points to each player. </span></string>
+</resources>

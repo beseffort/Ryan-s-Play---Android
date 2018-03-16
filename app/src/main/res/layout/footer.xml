@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="50dp"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentRight="true"
+    android:background="#fff6f7f2"
+    android:baselineAligned="false"
+     >
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="0.75">
+    <FrameLayout
+        android:layout_width="0px"
+        android:layout_height="60dp"
+        android:id="@+id/fo_ibt_home"
+        android:layout_weight="0.15"
+        android:layout_gravity="center">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/homeselector"
+            android:layout_gravity="center|top"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="0dp"
+            />
+        <!--<fonts.BebasNeueBoldTextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="@string/homeselector"-->
+            <!--android:layout_gravity="center_horizontal|bottom"-->
+            <!--android:textColor="#666666"-->
+            <!--android:textSize="10dp"-->
+            <!--android:layout_marginTop="0dp"-->
+            <!--android:layout_marginBottom="5dp"-->
+            <!--/>-->
+
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:layout_width="0px"
+        android:layout_height="60dp"
+        android:id="@+id/fo_ibt_leader_board"
+
+        android:layout_weight="0.15"
+        android:layout_gravity="center">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/leader_board"
+            android:layout_gravity="center|top"
+            android:layout_marginTop="11dp"
+           />
+        <!--<fonts.BebasNeueBoldTextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="@string/leaderboard"-->
+            <!--android:layout_gravity="center_horizontal|bottom"-->
+            <!--android:textColor="#666666"-->
+            <!--android:textSize="10dp"-->
+            <!--android:layout_marginTop="0dp"-->
+            <!--android:layout_marginBottom="4dp"-->
+     <!--/>-->
+
+     </FrameLayout>
+
+
+    <FrameLayout
+        android:layout_width="0px"
+        android:layout_height="60dp"
+        android:id="@+id/fo_ibt_plays"
+        android:layout_weight="0.15"
+        android:layout_gravity="center_horizontal">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|top"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/plays"
+            android:layout_marginBottom="0dp"
+             />
+        <!--<fonts.BebasNeueBoldTextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="@string/play"-->
+            <!--android:layout_gravity="center_horizontal|bottom"-->
+            <!--android:textColor="#666666"-->
+            <!--android:textSize="10dp"-->
+            <!--android:layout_marginTop="0dp"-->
+            <!--android:layout_marginBottom="10dp"-->
+           <!--/>-->
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="0px"
+        android:layout_height="60dp"
+        android:id="@+id/fo_ibt_account"
+
+        android:layout_weight="0.15"
+        android:layout_gravity="center">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/profileselector"
+            android:layout_gravity="center|top"
+            android:layout_marginTop="10dp"
+             />
+        <!--<fonts.BebasNeueBoldTextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="@string/profileselector"-->
+            <!--android:layout_gravity="center|bottom"-->
+            <!--android:textColor="#666666"-->
+            <!--android:textSize="10dp"-->
+            <!--android:layout_marginTop="0dp"-->
+            <!--android:layout_marginBottom="5dp"-->
+            <!--/>-->
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="0px"
+        android:layout_height="60dp"
+        android:id="@+id/fo_ibt_settings"
+        android:layout_weight="0.15"
+        android:layout_gravity="center">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/settings"
+            android:layout_gravity="center|top"
+            android:layout_marginTop="10dp"
+             />
+        <!--<fonts.BebasNeueBoldTextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="@string/settings"-->
+            <!--android:layout_gravity="center_horizontal|bottom"-->
+            <!--android:textColor="#666666"-->
+            <!--android:textSize="10dp"-->
+            <!--android:layout_marginTop="0dp"-->
+            <!--android:layout_marginBottom="5dp"-->
+
+            <!--android:layout_marginRight="0dp" />-->
+
+    </FrameLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

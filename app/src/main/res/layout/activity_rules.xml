@@ -1,0 +1,142 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ryansplayllc.ryansplay.Rules"
+    android:background="#ffffff">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relativeLayout11">
+        <include
+            android:id="@+id/header"
+            layout="@layout/header" />
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="50dp"
+            android:layout_below="@+id/header">
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relativeLayout11"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="*Players*"
+
+                    android:id="@+id/public_facing_rules"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#000000" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Guess where the batter will hit the ball on the field before the first pitch of an at bat in a live baseball game. You must select a position on the field or the Strikeout/Walk/Hit By Pitch button for every Play. If no selection is made, then you have no chance to win points for that play."
+                    android:id="@+id/public_facing_content"
+
+                    android:layout_marginTop="5dp"
+                    android:textSize="14dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1 batter = 1 Play"
+                    android:textSize="14dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#000000"
+                    android:layout_marginLeft="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="If you think the batter will get a base hit, select the position the hit will go to and then turn on the Base Hit light. "
+                    android:textSize="14dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#000000"
+                    android:layout_marginLeft="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="If you think a run will score or the batter will hit a home run during the at bat, select a position and turn on the Score Run light, and/or the Home Run light."
+                    android:textSize="14dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#000000"
+                    android:layout_marginLeft="5dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="*Umpires*"
+
+                    android:id="@+id/umpire_scoring_rules"
+                    android:textStyle="bold"
+                    android:layout_below="@+id/public_facing_content"
+                    android:textSize="15dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:textColor="#000000"
+                    android:layout_marginTop="10dp" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="If you created the game then you are the default umpire. Umpires are in charge of closing the guessing period before the first pitch is thrown to the batter, and entering the result of the play. The result of the play should include the first fielder to have control of the ball after it is hit, not the first fielder to touch the ball."
+                    android:layout_below="@+id/umpire_scoring_rules"
+                    android:layout_marginTop="5dp"
+                    android:textSize="14dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:textColor="#000000" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Umpires are also players in the games they create, so make sure that results entered are fair and accurate."
+                    android:layout_below="@+id/umpire_scoring_rules"
+                    android:layout_marginTop="5dp"
+                    android:textSize="14dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:textColor="#000000" />
+            </LinearLayout>
+        </ScrollView>
+
+        <fonts.BebasNeueBoldTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Learn  How to Play"
+            android:id="@+id/textView50"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:textSize="21dp"
+            android:textStyle="bold"
+            android:textColor="#ffffff" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        >
+        <include
+            android:id="@+id/st_in_footer"
+            layout="@layout/footer" />
+    </RelativeLayout>
+
+</RelativeLayout>

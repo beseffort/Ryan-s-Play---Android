@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/pop_up_game_screen_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/green_alpha"
+    android:orientation="vertical"
+    android:padding="@dimen/default_padding" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/popup"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/pop_up_game_screen_ll_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/default_padding" >
+
+            <TextView
+                android:id="@+id/pop_up_game_screen_tv_message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="@dimen/default_padding"
+                android:text="@string/waiting_for_umpire_result"
+                android:textColor="@color/red_text"
+                android:textSize="@dimen/default_heading_size"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/pop_up_game_screen_ll_result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="4" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:padding="@dimen/default_padding"
+                android:text="@string/last_play"
+                android:textColor="@color/red_text"
+                android:textSize="@dimen/default_text_size"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/pop_up_game_screen_tv_last_play"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:padding="@dimen/default_padding"
+                android:textColor="@color/default_text"
+                android:textSize="@dimen/default_text_size" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="@dimen/default_padding"
+                android:text="@string/points"
+                android:textColor="@color/red_text"
+                android:textSize="@dimen/default_text_size"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/pop_up_game_screen_tv_points"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="@dimen/default_padding"
+                android:textColor="@color/default_text"
+                android:textSize="@dimen/default_text_size" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

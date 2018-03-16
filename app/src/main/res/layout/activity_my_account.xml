@@ -1,0 +1,625 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="false"
+    tools:context=".MyAccountActivity"
+    android:background="#ffffff">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:background="#347296">
+        <include
+            android:id="@+id/header"
+            layout="@layout/header" />
+
+        <fonts.BebasNeueBoldTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="RyanWheeler749"
+            android:id="@+id/my_tv_player_name"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#ffffffff"
+            android:textSize="21dp"
+            android:textStyle="bold"
+            android:layout_marginTop="18dp"
+            android:layout_marginLeft="105dp"
+            android:layout_centerHorizontal="true" />
+
+        <fonts.HelveticaNeueCondensedBoldTextview
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/edit"
+            android:id="@+id/editbutton"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="20dp"
+            android:textColor="#ffffffff"
+            android:gravity="right"
+            android:textIsSelectable="false"
+            android:textSize="15dp"
+            android:layout_alignBottom="@+id/my_tv_player_name" />
+
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView"
+        android:layout_marginTop="100dp"
+        android:paddingTop="50dp"
+
+        android:fillViewport="false"
+        android:background="#ffffff">
+
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:background="#ffffff">
+            <RelativeLayout
+                android:id="@+id/firstCircularRow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                >
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="8dp"
+                    android:layout_toLeftOf="@+id/refFirstGap">
+
+                    <LinearLayout
+                        android:layout_width="86.3dp"
+                        android:layout_height="86.3dp"
+                        android:id="@+id/profileCirle"
+                        android:background="@drawable/profile_cricle"
+                        >
+
+                        <fonts.BebasNeueBoldTextView
+                            android:id="@+id/my_tv_total_points"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="0"
+
+                            android:layout_gravity="center_vertical"
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            android:textSize="@dimen/editprofile_values_size"
+                            android:textColor="#004770" />
+                    </LinearLayout>
+
+                    <fonts.BebasNeueBoldTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/pointsleaderboard"
+                        android:id="@+id/pointsText"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@+id/profileCirle"
+                        android:textSize="13dp"
+                        android:textColor="#666666"
+                        />
+
+                    <fonts.HelveticalNeueTextview
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="#0 overall"
+                        android:id="@+id/profile_points_rank"
+                        android:layout_centerHorizontal="true"
+                        android:textSize="12dp"
+                        android:layout_below="@+id/pointsText"
+                        android:textColor="#999999"/>
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:id="@+id/refFirstGap"
+                    android:layout_centerHorizontal="true">
+
+
+                    <!--<LinearLayout
+                        android:layout_width="86.3dp"
+                        android:layout_height="86.3dp"
+                        android:background="@drawable/profile_cricle"
+                        android:id="@+id/ringsCircle"
+                        >
+
+                        <fonts.BebasNeueBoldTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="0"
+                            android:id="@+id/profile_rings_text"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            android:textSize="@dimen/editprofile_values_size"
+                            android:textColor="#004770" />
+                    </LinearLayout>
+
+                    <fonts.BebasNeueBoldTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/rings"
+                        android:id="@+id/ringsText"
+                        android:layout_centerHorizontal="true"
+                        android:textColor="#666666"
+                        android:layout_below="@+id/ringsCircle"
+                        android:textSize="13dp" />
+
+                    <fonts.HelveticalNeueTextview
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="#0 overall"
+                        android:id="@+id/profile_rings_rank"
+                        android:layout_below="@+id/ringsText"
+                        android:layout_centerHorizontal="true"
+                        android:textSize="12dp"
+                        android:textColor="#999999"/>-->
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/refFirstGap"
+                    android:layout_marginLeft="8dp">
+
+
+
+
+                    <LinearLayout
+                        android:layout_width="86.3dp"
+                        android:layout_height="86.3dp"
+                        android:background="@drawable/profile_cricle"
+
+                        android:id="@+id/playCircle"
+                        >
+
+                        <fonts.BebasNeueBoldTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="0"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            android:textSize="@dimen/editprofile_values_size"
+                            android:textColor="#004770"
+                            android:id="@+id/my_tv_total_plays" />
+                    </LinearLayout>
+
+                    <fonts.BebasNeueBoldTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="@string/play"
+                        android:textSize="15dp"
+                        android:id="@+id/playText"
+                        android:layout_below="@+id/playCircle"
+                        android:layout_centerHorizontal="true"
+                        android:textColor="#666666"
+                        />
+
+                    <fonts.HelveticalNeueTextview
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="#0 overall"
+                        android:layout_below="@+id/playText"
+                        android:layout_centerHorizontal="true"
+                        android:textSize="12dp"
+                        android:layout_marginLeft="20dp"
+                        android:textColor="#999999"
+                        android:id="@+id/plays_rank" />
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/belowFirstCircle"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="3"
+                android:visibility="invisible"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/firstCircularRow">
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:id="@+id/secondRow"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="3"
+
+                android:layout_below="@+id/belowFirstCircle">
+
+
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/secondRow"
+                android:id="@+id/secondCircleRow"
+                android:layout_marginTop="10dp"
+                >
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp">
+
+
+                    <LinearLayout
+                        android:layout_width="86.3dp"
+                        android:layout_height="86.3dp"
+                        android:background="@drawable/profile_cricle"
+
+                        android:id="@+id/hitsCircle">
+
+                        <fonts.BebasNeueBoldTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="0"
+
+                            android:layout_gravity="center_vertical"
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            android:textSize="@dimen/editprofile_values_size"
+                            android:textColor="#004770"
+                            android:id="@+id/my_tv_base_hit" />
+                    </LinearLayout>
+
+
+                    <fonts.BebasNeueBoldTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/hits"
+                        android:layout_weight="1"
+                        android:id="@+id/hitsText"
+                        android:layout_centerHorizontal="true"
+                        android:textSize="13dp"
+                        android:textColor="#666666"
+                        android:layout_below="@+id/hitsCircle"
+                        android:layout_marginLeft="0dp" />
+
+                    <fonts.HelveticalNeueTextview
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="#0 overall"
+                        android:layout_below="@+id/hitsText"
+                        android:layout_centerHorizontal="true"
+                        android:textSize="12dp"
+                        android:textColor="#999999"
+                        android:id="@+id/hits_rank" />
+                </RelativeLayout>
+
+
+
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true">
+
+                    <LinearLayout
+                        android:layout_width="86.3dp"
+                        android:layout_height="86.3dp"
+                        android:background="@drawable/profile_cricle"
+                        android:id="@+id/homeRunCircle"
+                        >
+
+                        <fonts.BebasNeueBoldTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="0"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            android:textSize="@dimen/editprofile_values_size"
+                            android:textColor="#004770"
+                            android:id="@+id/my_tv_hr" />
+                    </LinearLayout>
+
+                    <fonts.BebasNeueBoldTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/homeruns"
+                        android:id="@+id/homeRunText"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@+id/homeRunCircle"
+                        android:textSize="13dp"
+                        android:textColor="#666666"
+                        android:layout_marginRight="0dp" />
+
+                    <fonts.HelveticalNeueTextview
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="#0 overall"
+
+                        android:layout_centerHorizontal="true"
+                        android:textSize="12dp"
+                        android:textColor="#999999"
+                        android:layout_below="@+id/homeRunText"
+                        android:id="@+id/home_runs_rank" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="30dp">
+
+                    <LinearLayout
+                        android:layout_width="86.3dp"
+                        android:layout_height="86.3dp"
+                        android:background="@drawable/profile_cricle"
+                        android:id="@+id/scoreRunCircle"
+                        >
+
+                        <fonts.BebasNeueBoldTextView
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="0"
+                            android:id="@+id/my_tv_strike_out"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            android:textSize="@dimen/editprofile_values_size"
+                            android:textColor="#004770" />
+                    </LinearLayout>
+
+                    <fonts.BebasNeueBoldTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="@string/runsscored"
+                        android:textSize="13dp"
+                        android:id="@+id/runScoredText"
+                        android:textColor="#666666"
+                        android:layout_below="@+id/scoreRunCircle"
+                        android:layout_marginRight="0dp"
+                        android:layout_centerHorizontal="true" />
+                    <fonts.HelveticalNeueTextview
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="#0 overall"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@+id/runScoredText"
+                        android:textSize="12dp"
+                        android:textColor="#999999"
+                        android:id="@+id/run_score_rank" />
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+            <LinearLayout
+                android:id="@+id/belowSecondRowCircle"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="3"
+                android:layout_marginTop="5dp"
+                android:visibility="invisible"
+                android:layout_below="@+id/secondCircleRow">
+
+
+            </LinearLayout>
+            <LinearLayout
+
+                android:id="@+id/secondRow2"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="3"
+
+                android:layout_below="@+id/belowSecondRowCircle">
+
+
+
+
+
+
+            </LinearLayout>
+
+
+
+            <RelativeLayout
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_below="@+id/secondRow2"
+                android:id="@+id/refGap"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                >
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/refGap"
+                android:layout_toLeftOf="@+id/refGap">
+                <LinearLayout
+                    android:layout_width="86.3dp"
+                    android:layout_height="86.3dp"
+                    android:background="@drawable/profile_cricle"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/gamesCircle"
+
+                    >
+
+                    <fonts.BebasNeueBoldTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/editprofile_values_size"
+                        android:textColor="#004770"
+                        android:id="@+id/gl_plays_for_points" />
+                </LinearLayout>
+
+                <fonts.BebasNeueBoldTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/games"
+                    android:layout_below="@+id/gamesCircle"
+                    android:textSize="15dp"
+                    android:id="@+id/gamesText"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="#666666"
+                    />
+
+                <fonts.HelveticalNeueTextview
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="#0 overall"
+                    android:layout_below="@+id/gamesText"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="12dp"
+                    android:layout_marginLeft="60dp"
+                    android:textColor="#999999"
+                    android:id="@+id/game_rank" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/playsCircleCntr"
+                android:layout_alignTop="@+id/refGap"
+                android:layout_toRightOf="@+id/refGap">
+                <LinearLayout
+                    android:layout_width="86.3dp"
+                    android:layout_height="86.3dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/profile_cricle"
+                    android:id="@+id/accuracyCircle"
+                    >
+
+                    <fonts.BebasNeueBoldTextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="0"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/editprofile_values_size"
+                        android:textColor="#004770"
+                        android:id="@+id/profile_accuracy_text"
+                        />
+                </LinearLayout>
+
+                <fonts.BebasNeueBoldTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Biggest Game Won"
+                    android:id="@+id/accuracyText"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="13dp"
+                    android:layout_weight="1"
+                    android:layout_below="@+id/accuracyCircle"
+                    android:textColor="#666666"
+
+                    />
+
+                <fonts.HelveticalNeueTextview
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="#0 overall"
+                    android:id="@+id/profile_accuracy_rank"
+                    android:layout_centerHorizontal="true"
+                    android:layout_weight="1"
+                    android:textSize="12dp"
+                    android:layout_below="@+id/accuracyText"
+                    android:textColor="#999999"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/playsCircleCntr"></RelativeLayout>
+
+
+
+
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/default_padding"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="39dp">
+
+        <viewstyles.RoundedViewStyle
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:contentDescription="@string/profile_pic"
+            android:background="@drawable/circle_border"/>
+        <viewstyles.RoundedViewStyle
+            android:id="@+id/my_iv_profile_pic"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:layout_gravity="center"
+            android:contentDescription="@string/profile_pic"
+            android:background="@drawable/leaderbord_profile_icon"/>
+
+        <RelativeLayout
+            android:id="@+id/loadingPanel"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:gravity="center"
+            >
+
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:indeterminate="true"
+                />
+        </RelativeLayout>
+    </FrameLayout>
+
+    <include
+        android:id="@+id/my_in_footer"
+        layout="@layout/footer" />
+
+</RelativeLayout>

@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#ffffff"
+    >
+
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/gamelobby_header">
+
+    <include
+        android:id="@+id/header"
+        layout="@layout/header" />
+
+    <fonts.BebasNeueBoldTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Game Lobby"
+        android:id="@+id/private_game_lobby_headerText"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ffffffff"
+        android:layout_marginTop="17dp"
+        android:textStyle="bold"
+        android:textSize="21dp" />
+
+    <fonts.HelveticaNeueCondensedBoldTextview
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="Invite Friends"
+        android:textColor="#ffffffff"
+        android:layout_alignBottom="@+id/private_game_lobby_headerText"
+        android:textStyle="bold"
+        android:textSize="14dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/inviteFriends_header" />
+</RelativeLayout>
+
+
+
+    <RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/gamelobby_header"
+        android:id="@+id/relativeLayout3"
+        android:layout_above="@+id/buttonregionlayout"
+
+        >
+
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#f6f7f2"
+            android:id="@+id/gamelobby_top_layout"
+            android:padding="10dp"
+            >
+
+            <fonts.BebasNeueBoldTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ryan's Tuesday 20 play game"
+
+                android:textSize="17dp"
+                android:id="@+id/game_lobby_tv_game_name"
+                android:textColor="#347296"
+                android:textStyle="bold"
+                />
+            <fonts.BebasNeueBoldTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ryanswheeler749"
+                android:layout_below="@+id/game_lobby_tv_game_name"
+                android:textColor="#347296"
+                android:textSize="10dp"
+                android:layout_alignLeft="@+id/game_lobby_tv_game_name"
+                android:id="@+id/game_lobby_tv_game_umpire" />
+
+
+            <fonts.BebasNeueBoldTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Plays"
+                android:layout_marginLeft="5dp"
+                android:textSize="17dp"
+                android:textStyle="bold"
+                android:layout_alignParentRight="true"
+                android:textColor="#347296"
+
+
+                android:id="@+id/game_lobby_tv_game_length_label" />
+
+            <fonts.BebasNeueBoldTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="20"
+                android:textSize="17dp"
+                android:textStyle="bold"
+                android:textColor="#347296"
+                android:layout_toLeftOf="@+id/game_lobby_tv_game_length_label"
+
+
+                android:id="@+id/game_lobby_tv_game_length" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#dde1cf"
+            android:layout_below="@id/gamelobby_top_layout"
+            android:id="@+id/gamelobby_header_divider"
+
+            android:orientation="horizontal"></LinearLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/gamelobby_header_divider"
+           android:id="@+id/full_game_lobby"
+            >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/gamelobby_top_bar2"
+            android:padding="10dp"
+            android:background="#F6F7F2">
+
+            <fonts.BebasNeueBoldTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Players"
+                android:layout_alignParentLeft="true"
+                android:textSize="17dp"
+                android:textStyle="bold"
+                android:gravity="center_vertical|center_horizontal"
+                android:textColor="#347296"
+                android:id="@+id/playersLength"
+                />
+
+            <fonts.BebasNeueBoldTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Number of plays"
+                android:textSize="17dp"
+                android:layout_centerHorizontal="true"
+                android:textStyle="bold"
+                android:textColor="#347296"
+                android:layout_alignParentRight="true"
+
+                />
+
+            <fonts.BebasNeueBoldTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:id="@+id/gamelobby_players_list_size"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/playersLength"
+                android:textSize="17sp"
+                android:textColor="#347296"
+                android:textStyle="bold"
+                android:layout_marginLeft="3dp"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="13" />
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#dde1cf"
+            android:layout_below="@id/gamelobby_top_bar2"
+            android:id="@+id/gamelobby_header_divider2"
+            android:orientation="horizontal"></LinearLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/game_lobby_players_list_layout"
+
+
+            android:layout_below="@+id/gamelobby_header_divider2"
+           >
+
+            <ListView
+                android:id="@+id/gl_lv_gome_loby"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:layout_marginTop="2dp"
+                android:fastScrollEnabled="true"
+                android:smoothScrollbar="true"
+                android:fadeScrollbars="true"
+
+
+                >
+            </ListView>
+
+
+            </RelativeLayout>
+            </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="50dp"
+            android:layout_below="@+id/gamelobby_header_divider"
+            android:background="@drawable/popup"
+
+            android:id="@+id/empty_gamelobby_layout"
+
+
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+
+
+                android:id="@+id/relativeLayout4">
+
+                <fonts.BebasNeueBoldTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="THERE ARE NO OTHER PLAYERS IN THIS GAME."
+                    android:textSize="17dp"
+                    android:id="@+id/no_Players_Message"
+                    android:layout_centerHorizontal="true"
+
+                    android:textColor="#347296"
+                    android:textStyle="bold"
+                    />
+
+                <fonts.BebasNeueBoldTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Invite some friends to join."
+                    android:textSize="17dp"
+                    android:id="@+id/get_the_word_out_text"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@id/no_Players_Message"
+
+                    android:textColor="#347296"
+                    android:textStyle="bold"
+                    android:layout_marginTop="5dp"
+
+
+                    />
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/signup_bar"
+                    android:layout_below="@+id/get_the_word_out_text"
+                    android:text="invite Friends"
+                    android:textColor="#ffffffff"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:id="@+id/invite_friends_button"
+                    android:layout_marginTop="20dp"
+                    android:layout_centerHorizontal="true">
+                    <fonts.BebasNeueBoldTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Invite Friends"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true"
+                        android:textColor="#ffffffff"
+                        android:textStyle="bold"/>
+                    </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/greyunselectbtn"
+                    android:layout_below="@+id/invite_friends_button"
+                    android:text="Start Game"
+                    android:textColor="#347296"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:id="@+id/start_game_button"
+                    android:layout_marginTop="20dp"
+                    android:layout_centerHorizontal="true">
+                    <fonts.BebasNeueBoldTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Start Game"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true"
+                        android:textColor="#347296"
+                        android:textStyle="bold"/>
+                    </RelativeLayout>
+
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/refreshButton"
+                android:visibility="gone"
+                android:layout_alignParentTop="true"
+                android:layout_alignRight="@+id/relativeLayout4"
+                android:layout_alignEnd="@+id/relativeLayout4"
+                android:layout_marginTop="21dp"
+                android:src="@drawable/ic_refresh"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="-10dp" />
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/st_in_footer"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="25dp"
+        android:id="@+id/buttonregionlayout"
+
+        >
+
+
+        <Button
+            android:id="@+id/gl_bt_change_umpire"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/greyunselectbtn"
+            android:text="@string/change_umpire"
+            android:textColor="#347296"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/game_lobby_bt_launch_game"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/signup_bar"
+            android:padding="@dimen/default_padding"
+            android:text="Start Game"
+            android:textColor="@android:color/white"
+            android:visibility="gone"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/gl_bt_change_umpire"
+            android:textStyle="bold"/>
+
+        <fonts.BebasNeueBoldTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wait for the umpire to start the game."
+            android:id="@+id/player_wait_info_label"
+            android:gravity="bottom"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:visibility="gone"
+            android:layout_centerHorizontal="true"
+
+            android:textColor="#004770"
+            android:layout_marginTop="10dp"
+            />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignTop="@+id/st_in_footer"
+        android:background="#ff090907"
+        android:layout_marginTop="-1dp"
+        android:visibility="gone"></LinearLayout>
+
+    <include
+        android:id="@+id/st_in_footer"
+        layout="@layout/footer" />
+
+
+
+
+
+
+
+</RelativeLayout>

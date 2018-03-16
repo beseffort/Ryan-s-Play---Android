@@ -1,0 +1,191 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ryansplayllc.ryansplay.Faq"
+    android:background="#ffffff">
+
+
+    <!--1. How does the app know which game I am watching?-->
+    <!--The app does NOT know which game you are watching. The umpire is responsible for keeping the app in sync with the live game and inputting the results of the live game to award points to each player.-->
+    <!--2. Does RP Baseball work for any baseball game?-->
+    <!--As long as there are 9 fielders and a batter, this game is applicable.-->
+    <!--3. Can I join a game after it has started?-->
+    <!--No-->
+    <!--4. Why can’t I select any of the lights right when a Play starts?-->
+    <!--A player can turn on any of the lights after they have selected a position on the field-->
+    <!--5.  Why can’t I turn on my Base Hit light after I select Strikeout/Walk/Hit By Pitch?-->
+    <!--A player cannot turn on the base hit light in this scenario because if one of those three results occur, then a base hit is not possible.-->
+    <!--6. Why can I always turn on my Homerun light?-->
+    <!--It is already hard enough to guess a home run correctly. We didn’t want to make it any harder.-->
+    <!--7. How often can I use an RP code?-->
+    <!--Players may only use one RP code every 24 hours.-->
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/faq_headerlayout"
+        android:layout_alignParentTop="true">
+
+        <include layout="@layout/header"/>
+
+        <fonts.BebasNeueBoldTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FAQS"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:textSize="21dp"
+            android:layout_centerInParent="true"/>
+        </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/faq_headerlayout"
+        >
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/faq_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1. How does the app know which game I am watching?"
+            android:textStyle="bold"
+            android:id="@+id/faq_que_1"
+            android:layout_marginTop="5dp"
+
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="The app does NOT know which game you are watching. The umpire is responsible for keeping the app in sync with the live game and inputting the results of the live game to award points to each player."
+            android:id="@+id/faq_ans_1"
+            android:layout_marginTop="0dp"
+            android:layout_below="@+id/faq_que_1"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2. Does RP Baseball work for any baseball game?"
+            android:textStyle="bold"
+            android:id="@+id/faq_que_2"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/faq_ans_1"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="As long as there are 9 fielders and a batter, this game is applicable. "
+            android:id="@+id/faq_ans_2"
+            android:layout_marginTop="0dp"
+            android:layout_below="@+id/faq_que_2"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3. Can I join a game after it has started?"
+            android:textStyle="bold"
+            android:id="@+id/faq_que_3"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/faq_ans_2"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No"
+            android:id="@+id/faq_ans_3"
+            android:layout_marginTop="0dp"
+            android:layout_below="@+id/faq_que_3"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4. Why can’t I select any of the lights right when a Play starts?"
+            android:textStyle="bold"
+            android:id="@+id/faq_que_4"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/faq_ans_3"
+
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A player can turn on any of the lights after they have selected a position on the field"
+            android:id="@+id/faq_ans_4"
+            android:layout_marginTop="0dp"
+            android:layout_below="@+id/faq_que_4"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5.  Why can’t I turn on my Base Hit light after I select Strikeout/Walk/Hit By Pitch?"
+            android:textStyle="bold"
+            android:id="@+id/faq_que_5"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/faq_ans_4"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A player cannot turn on the base hit light in this scenario because if one of those three results occur, then a base hit is not possible."
+            android:id="@+id/faq_ans_5"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/faq_que_5"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="6. Why can I always turn on my Homerun light?"
+            android:textStyle="bold"
+            android:id="@+id/faq_que_6"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/faq_ans_5"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="It is already hard enough to guess a home run correctly. We didn’t want to make it any harder."
+            android:id="@+id/faq_ans_6"
+            android:layout_marginTop="0dp"
+            android:layout_below="@+id/faq_que_6"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="7. How many times can I use an RP code?"
+            android:textStyle="bold"
+            android:id="@+id/faq_que_7"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/faq_ans_6"
+
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Players may use each RP code once."
+            android:id="@+id/faq_ans_7"
+            android:layout_marginTop="0dp"
+            android:layout_below="@+id/faq_que_7"
+            />
+
+        </RelativeLayout>
+</ScrollView>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/faq_footerlayout"
+        android:layout_alignParentBottom="true">
+        <include layout="@layout/footer"/>
+        </RelativeLayout>
+
+</RelativeLayout>

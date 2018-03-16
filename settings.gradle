@@ -1,0 +1,1 @@
+include ':app', ':androidasync-1.3.7', ':rollbar-android-0.1.2', ':android-async-http-1.4.4', ':com.fasterxml.jackson.databind', ':com.fasterxml.jackson.core', ':androidasync-1.0.5', ':jackson-annotations-2.1.2', ':androidasync-1.1.2-sources', ':android-async-http-1.4.3'
